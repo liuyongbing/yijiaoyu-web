@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect(route('home.index'));
 });
+//关于我们
+Route::resource('about', 'AboutController');
+//创始人
+Route::resource('boss', 'BossController');
+//创始人
+Route::resource('home', 'HomeController');
+//资讯
+Route::resource('news', 'NewsController');

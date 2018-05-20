@@ -1,0 +1,46 @@
+.bossMain{
+}
+.bossMain a{
+    cursor:default
+}
+.boss{
+    width: 100%;
+}
+.boss .box{
+    width: 62.9%;
+    max-width: 1209px;
+    padding: 37px 0 0 0;
+    height: 45.2%;
+    max-height: 869px;
+    margin: 0 auto;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+.boss .box a{
+     display:block;
+     width: 50%;
+     float: left;
+    overflow: hidden;
+}
+.boss .box:hover{
+    transform: scale(1.01);
+    opacity: 0.9;
+}
+.bo_ly{
+    background: #e4e9e9;
+}
+.bo_ly .left{
+    display: inline-block;
+    margin-top: 12%;
+}
+.bo_ly .right img{
+   width: 85%;
+}
+.bo_dw{
+    height: 44.68%;
+    max-height: 858px;
+}
+.bo_dw .left{
+    display: inline-block;
+    margin-top: 4%;
+}

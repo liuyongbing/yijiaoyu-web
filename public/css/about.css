@@ -1,0 +1,117 @@
+.about_main a{
+    cursor:default
+}
+.ab_BannerBottom,.ab_group,.ab_brand,.ab_brandShow{
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+.ab_BannerBottom>a{
+    display: inline-block;
+    width: 30%;
+    text-align:center;
+}
+.ab_BannerBottom>a:nth-of-type(2){
+    border-right:1px solid #ddd ;
+    border-left: 1px solid #dddddd;
+}
+.ab_BannerBottom>a>img{
+     width: auto;
+}
+.ab_group .title,.ab_brand .title,.ab_brandShow .title{
+    font-size: 42px;
+    height: 72px;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+.ab_group .title span,.ab_brand .title span,.ab_brandShow .title span{
+    display:block;
+    width: 100%;
+    text-align: center;
+    height: 12px;
+    line-height: 12px;
+}
+.ab_group .title span img,.ab_brand .title span img,.ab_brandShow .title span img{
+    width: 20%;
+}
+.ab_group .groupImgs>a{
+     display: inline-block;
+      width: 12.3%;
+      padding: 0 40px;
+      margin-top: 20px;
+}
+.ab_group .groupImgs>a:last-of-type{
+    margin-right: 0;
+}
+.ab_group ,.ab_brandShow{
+    padding-top: 95px;
+    padding-bottom: 83px;
+    background: #f4f3f3;
+}
+.ab_brand .brandImgs{
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+.ab_brandShow .brandImgs>a{
+   display: inline-block;
+   width: 165px;
+   margin-left: 38px;
+   margin-top: 30px;
+   cursor: pointer;
+}
+.ab_brandShow .brandImgs>a:first-of-type{
+    margin-left: 0;
+}
+
+@media screen  and  (max-width:577px)  and (min-width:320px){
+    .ab_BannerBottom,.ab_group,.ab_brand,.ab_brandShow{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .ab_BannerBottom>a{
+        display: inline-block;
+         width: 100%;
+        text-align:center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none ;
+        border-bottom: 1px solid #dddddd;
+    }
+    .ab_BannerBottom>a:last-of-type{
+        border: none;
+    }
+    .ab_brand .brandImgs{
+        width: 90%;
+        margin-top: 10px;
+    }
+    .ab_group .groupImgs>a{
+        display: inline-block;
+        width: 28%;
+        padding: 0 40px;
+        margin-top: 20px;
+    }
+    .ab_brandShow .brandImgs>a{
+        display: inline-block;
+        width: 30%;
+        margin-left:10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .ab_group .title span img,.ab_brand .title span img,.ab_brandShow .title span img{
+        width: 50%;
+    }
+    .ab_group .title,.ab_brand .title,.ab_brandShow .title{
+        font-size: 32px;
+        height: 72px;
+        font-weight: bolder;
+        padding-bottom: 10px;
+    }
+}
+
+
+

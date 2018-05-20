@@ -1,0 +1,181 @@
+.searchBox,.newsList{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top:50px ;
+
+}
+.searchBox{
+    margin-top: 120px;
+}
+.searchBox>div{
+    width: 281px;
+    height: 94px;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; ;
+    float: left;
+    position: relative;
+    text-align: center;
+
+}
+.searchBox input[type="text"]{
+    width: 90%;
+    border: none;
+    font-size: 35px;
+    height: 94px;
+    line-height: 94px;
+    text-align: center;
+    cursor: pointer;
+}
+.searchBox .calSelect{
+  margin: 0 44px;
+}
+.searchBox .selectList{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    border-radius: 10px;
+    display: none;
+}
+.searchBox .selectList .item>a{
+    width: 100%;
+    display: inline-block;
+    height: 92px;
+    line-height: 92px;
+    font-size: 16px;
+    background: #dddddd;
+    border-top:1px solid #ffffff ;
+}
+.searchBox .selectList .item>a:hover{
+background:#d94d2d ;
+    color: #ffffff;
+}
+.searchBox>div .icon_bottom{
+    display: block;
+    width: 19px;
+    height: 20px;
+    background: url("../imgs/icon/icons.png");
+    background-position: 202px 99px;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    transition: all 0.3s;
+}
+.searchBox>div .icon-active{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.searchBox .searchBtn{
+    width: 281px;
+    height: 94px;
+    line-height: 94px;
+    background: none;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.searchBox .searchBtn:hover{
+    background: #e3521f;
+    color: #ffffff;
+}
+.searchBox .searchBtn .icon_search{
+     width: 24px;
+     height: 24px;
+     background: url("../imgs/icon/icons.png");
+     background-position: 24px 96px;
+     margin-left: 40px;
+}
+.newsList .newsUl{
+    width: 100%;
+}
+.newsList .newsUl .item{
+    height: 134px ;
+    margin-bottom: 40px;
+
+    transition: all 0.3s;
+	overflow:hidden
+}
+.newsList .newsUl .item:hover{
+   background: #eee;
+
+}
+.newsList .newsUl .item .img{
+    width: 179px;
+    height: 127px;
+    float: left;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+.newsList .newsUl .item .newsinfo{
+     width:683px ;
+     margin-left: 20px;
+     float: left;
+     text-align: left;
+     font-size: 12px;
+     margin-top: 10px;
+     position: relative;
+
+}
+.newsList .item .newsinfo p.info{
+	 height:70px;
+	   display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+	  position:relative
+}
+/*.newsList .item .newsinfo p.info:before{  */
+            /*height:15px;*/
+            /*line-height:15px;			*/
+            /*position: absolute;  */
+            /*content: "...";  */
+            /*right: 6px;  */
+            /*bottom: 0px;    */
+        /*}*/
+.newsUl .item .newsinfo .title{
+    font-size: 24px;
+		 overflow: hidden;
+     text-overflow:ellipsis;
+     white-space: nowrap;
+}
+.newsUl .item .newsinfo .date{
+    position: absolute;
+    right: 20px;
+}
+.pagination{
+    position: relative;
+}
+.paginationUl{
+    margin: 0 auto;
+    width: 500px;
+    height: 50px;
+    overflow: hidden;
+    text-align: center;
+}
+.paginationUl .item{
+    width: 50px;
+    float: left
+}
+.paginationUl .item>a{
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #eee;
+    border-left:none ;
+    line-height: 30px;
+    transition: all 0.3s;
+}
+.paginationUl .item:nth-of-type(1)>a{
+border-left:1px solid #dddddd ;
+}
+.paginationUl .item>a:hover{
+   background: #56b2dd;
+    color: #ffffff;
+}
