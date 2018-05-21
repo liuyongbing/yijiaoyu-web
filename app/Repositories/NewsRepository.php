@@ -9,4 +9,9 @@ class NewsRepository extends Repository
     {
         $this->endPoint = new NewsEndpoint();
     }
+    
+    public function years()
+    {
+        return $this->endPoint->years();
+    }
 }

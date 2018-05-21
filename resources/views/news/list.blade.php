@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('style')
-<link rel="stylesheet" href="css/news.css" />
+<link rel="stylesheet" href="{{ asset(elixir('css/news.css')) }}" />
 @endsection
 
 @section('content')
@@ -24,9 +24,9 @@
            </div>
            <ul class="selectList">
                <li class="item" id="0"><a href="javascript:;">选择全部</a></li>
-               <li class="item" id="1"><a href="javascript:;">2018年</a></li>
-               <li class="item" id="2"><a href="javascript:;">2017年</a></li>
-               <li class="item" id="3"><a href="javascript:;">2016年</a></li>
+               @foreach($years as $year)
+               <li class="item" id="1"><a href="javascript:;">{{ $year }}年</a></li>
+               @endforeach
            </ul>
        </div>
         <div class="calSelect">
@@ -35,12 +35,9 @@
                 <span class="icon icon_bottom"></span>
             </div>
             <ul class="selectList">
-                <li class="item" id="01"><a href="javascript:;">齐天大圣跆拳道</a></li>
-                <li class="item" id="02"><a href="javascript:;">口袋猫舞蹈</a></li>
-                <li class="item" id="03"><a href="javascript:;">童画镇美术</a></li>
-                <li class="item" id="04"><a href="javascript:;">学会玩轮滑</a></li>
-                <li class="item" id="05"><a href="javascript:;">小虎队篮球</a></li>
-                <li class="item" id="06"><a href="javascript:;">小虎队足球</a></li>
+            @foreach($categories as $cate)
+                <li class="item" id="01"><a href="javascript:;">{{ $cate['title'] }}</a></li>
+            @endforeach
             </ul>
         </div>
          <button type="button" class="searchBtn">搜索<span class="icon icon_search"></span></button>
@@ -48,71 +45,20 @@
     <section class="newsList ">
         <div class="dataShow">
         <ul class="newsUl" id="newslistBox">
+        @foreach($items as $item)
             <li class="item">
-                <a href="javascript:;">
+                <a href="{{ route('news.show', ['id' => $item['id']]) }}" target="_blank">
                     <div class="img">
-                        <img src="imgs/news/newsImg.png" alt="item"/>
+                        <img src="{{ $item['thumb'] }}" alt="{{ $item['title'] }}"/>
                     </div>
                     <div class="newsinfo">
-                        <h3 class="title">【三亚之旅】没有观世界，哪来的世界观！！！</h3>
-                        <p class="info">8月16号上午9点第一批前往三亚旅行老师们已经达到了天河机场很多老师都没有去过一路上都很兴奋相信这段三亚之旅
-                            有大家在肯定会过的很愉快8月16号上午9点第一批前往三亚旅行老师们已经达到了天河机场很多老师都没有去过一路上都很兴奋相信这段三亚之旅
-                            有大家在肯定会过的很愉快8月16号上午9点第一批前往三亚旅行老师们已经达到了天河机场很多老师都没有去过一路上都很兴奋相信这段三亚之旅
-                    有大家在肯定会过的很愉快8月16号上午9点第一批前往三亚旅行老师们已经达到了天河机场很多老师都没有去过一路上都很兴奋相信这段三亚之旅
-                            有大家在肯定会过的很愉快8月16号上午9点第一批前往三亚旅行老师们已经达到了天河机场很多老师都没有去过一路上都很兴奋相信这段三亚之旅
-							  有大家在肯定会过的很愉快8月16号上午9点第一批前往三亚旅行老师们已经达到了天河机场很多老师都没有去过一路上都很兴奋相信这段三亚之旅
-                            有大家在肯定会过的很愉快8月16号上午9点第一批前往三亚旅行老师们已经达到了天河机场很多老师都没有去过一路上都很兴奋相信这段三亚之旅
-                           </p>
-                        <span class="date">2018年10月22日</span>
+                        <h3 class="title">{{ $item['title'] }}</h3>
+                        <p class="info">{{ $item['summary'] }}</p>
+                        <span class="date">{{ date('Y年n月j日', strtotime($item['created_at'])) }}</span>
                     </div>
-
                 </a>
             </li>
-
-            <li class="item">
-                <a href="javascript:;">
-                    <div class="img">
-                        <img src="imgs/news/newsImg.png" alt="item"/>
-                    </div>
-                    <div class="newsinfo">
-                        <h3 class="title">【三亚之旅】没有观世界，哪来的世界观！！！</h3>
-                        <p class="info">8月16号上午9点第一批前往三亚旅行老师们已经达到了天河机场很多老师都没有去过一路上都很兴奋相信这段三亚之旅
-                            有大家在肯定会过的很愉快</p>
-                        <span class="date">2018年10月22日</span>
-                    </div>
-
-                </a>
-            </li>
-
-            <li class="item">
-                <a href="javascript:;">
-                    <div class="img">
-                        <img src="imgs/news/newsImg.png" alt="item"/>
-                    </div>
-                    <div class="newsinfo">
-                        <h3 class="title">【三亚之旅】没有观世界，哪来的世界观！！！</h3>
-                        <p class="info">8月16号上午9点第一批前往三亚旅行老师们已经达到了天河机场很多老师都没有去过一路上都很兴奋相信这段三亚之旅
-                            有大家在肯定会过的很愉快</p>
-                        <span class="date">2018年10月22日</span>
-                    </div>
-
-                </a>
-            </li>
-
-            <li class="item">
-                <a href="javascript:;">
-                    <div class="img">
-                        <img src="imgs/news/newsImg.png" alt="item"/>
-                    </div>
-                    <div class="newsinfo">
-                        <h3 class="title">【三亚之旅】没有观世界，哪来的世界观！！！</h3>
-                        <p class="info">8月16号上午9点第一批前往三亚旅行老师们已经达到了天河机场很多老师都没有去过一路上都很兴奋相信这段三亚之旅
-                            有大家在肯定会过的很愉快</p>
-                        <span class="date">2018年10月22日</span>
-                    </div>
-
-                </a>
-            </li>
+        @endforeach
         </ul>
         <div class="pagination">
             <ul class="paginationUl">
