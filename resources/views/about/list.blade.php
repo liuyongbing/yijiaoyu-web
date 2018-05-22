@@ -6,16 +6,9 @@
 
 @section('content')
 <article class="main about_main">
-    <!--banner-->
-    <section class="banner swiper-container">
-        <ul class="bannerUl swiper-wrapper">
-            <li class="item swiper-slide"><a href="javascript:;" target="_blank"><img src="imgs/banners/abBanner.jpg" alt="01"></a></li>
-        </ul>
-        <div class="swiper-pagination banner_slider"></div>
-        <div class=" icon-prev icon">  </div>
-        <div class=" icon-next icon">  </div>
-    </section>
-    <!--banner End-->
+    
+    @include('include.banner')
+    
     <!-- bannerBottom -->
     <section class="ab_BannerBottom">
         <a href="javascript:;">
