@@ -47,4 +47,24 @@ class NewsController extends Controller
             ]
         ]);
     }
+    
+    /**
+     * 查看
+     *
+     * @param int $id
+     */
+    public function show($id)
+    {
+        $detail= $this->repository->detail($id);
+        
+        $next       = $this->repository->next($id);//Next:下一篇
+        $previous   = $this->repository->previous($id);//Previous:上一篇
+        
+        return view($this->route . '.detail', [
+            'route'     => $this->route,
+            'detail'    => $detail,
+            'next'      => $next,
+            'previous'  => $previous
+        ]);
+    }
 }

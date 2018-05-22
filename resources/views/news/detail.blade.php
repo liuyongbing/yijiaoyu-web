@@ -28,8 +28,12 @@
             <button type="button" class="blackBtn">返回</button>
             <div class="pagination">
                 <ul class="pagUl">
-                    <li class="item">上一篇：<a href="javascript:;">每次可偶尔间</a></li>
-                    <li class="item">下一篇：<a href="javascript:;">你的飞碟</a></li>
+                @if (!empty($previous))
+                    <li class="item">上一篇：<a href="{{ route('news.show', ['id' => $previous['id']]) }}">{{ $previous['title'] }}</a></li>
+                @endif
+                @if (!empty($next))
+                    <li class="item">下一篇：<a href="{{ route('news.show', ['id' => $next['id']]) }}">{{ $next['title'] }}</a></li>
+                @endif
                 </ul>
             </div>
         </div>
