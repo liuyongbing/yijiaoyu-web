@@ -1,5 +1,5 @@
 <header class="header">
-    <a href="/" class="h_logo fl"></a>
+    <a href="{{ env('APP_URL') }}" class="h_logo fl"></a>
     <a href="javascript:;" class="sliderShowBtn fr">三</a>
     <ul class="h_slider fl" id="slider">
         <li class="item ">
@@ -42,8 +42,8 @@
             FOUNDER
             </a>
             <ul class="itemUl">
-                <li class="item"><a href="javascript:;">董事长</a></li>
-                <li class="item"><a href="javascript:;">CEO</a></li>
+                <li class="item"><a href="{{ route('boss.index') }}#chairman">董事长</a></li>
+                <li class="item"><a href="{{ route('boss.index') }}#ceo">CEO</a></li>
             </ul>
         </li>
         <li class="item ">
@@ -51,7 +51,9 @@
             NEWS
             </a>
         </li>
-        <li class="item h_s_enter"><a href="javascript:;">教学入口</a></li>
+        <li class="item h_s_enter">
+            <a href="{{ env('EDU_URL') }}" target="_blank">教学入口</a>
+        </li>
     </ul>
     <span class="h_tel fr">0717-6232880</span>
 </header>

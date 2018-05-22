@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('style')
-<link rel="stylesheet" href="{{ asset(elixir('css/newsDetail.css')) }}" />
+<link rel="stylesheet" href="{{ asset(elixir('css/newsDetail.css')) }}{{ $STATIC_VERSION }}" />
 @endsection
 
 @section('content')

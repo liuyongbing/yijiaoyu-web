@@ -3,7 +3,7 @@
         <h2><span>Tel</span>0717-6232880</h2>
     </div>
     <div class="f_address">
-        <img src="/imgs/icon/code.png" alt="code" class="code"/>
+        <img src="/imgs/icon/code.png{{ $STATIC_VERSION }}" alt="code" class="code"/>
         <div class="fr adderssInfo">
             <p>公司:宜昌翼教教育有限公司</p>
             <p>地址:湖北省宜昌市伍加岗区沿江大道169号福江铭座15楼</p>

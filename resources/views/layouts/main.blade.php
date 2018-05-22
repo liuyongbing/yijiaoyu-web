@@ -9,10 +9,10 @@
     <meta name="renderer" content="webkit">
     <meta name="description" content="翼教育">
     <meta name="keyword" content="翼教育,教育">
-    @yield('title')
-    <link href="{{ asset(elixir('css/base.css')) }}" rel="stylesheet"/>
-    <link href="{{ asset(elixir('css/common.css')) }}" rel="stylesheet"/>
-    <link href="{{ asset(elixir('util/swiper/swiper.min.css')) }}" rel="stylesheet"/>
+    <title>@yield('title') - {{ env('APP_NAME') }}</title>
+    <link href="{{ asset(elixir('css/base.css')) }}{{ $STATIC_VERSION }}" rel="stylesheet"/>
+    <link href="{{ asset(elixir('css/common.css')) }}{{ $STATIC_VERSION }}" rel="stylesheet"/>
+    <link href="{{ asset(elixir('util/swiper/swiper.min.css')) }}{{ $STATIC_VERSION }}" rel="stylesheet"/>
     @yield('style')
 </head>
 <body>
@@ -23,10 +23,10 @@
 @include('layouts.footer')
 </body>
 
-<script src="{{ asset(elixir('util/jquery-3.1.0.min.js')) }}"></script>
-<script src="{{ asset(elixir('util/swiper/swiper.min.js')) }}"></script>
-<script src="{{ asset(elixir('js/common.js')) }}"></script>
+<script src="{{ asset(elixir('util/jquery-3.1.0.min.js')) }}{{ $STATIC_VERSION }}"></script>
+<script src="{{ asset(elixir('util/swiper/swiper.min.js')) }}{{ $STATIC_VERSION }}"></script>
+<script src="{{ asset(elixir('js/common.js')) }}{{ $STATIC_VERSION }}"></script>
 
-<script src="{{ asset(elixir('js/news.js')) }}"></script>
+<script src="{{ asset(elixir('js/news.js')) }}{{ $STATIC_VERSION }}"></script>
 @yield('script')
 </html>

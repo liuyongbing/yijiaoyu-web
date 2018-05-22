@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('style')
-<link rel="stylesheet" href="{{ asset(elixir('css/news.css')) }}" />
+<link rel="stylesheet" href="{{ asset(elixir('css/news.css')) }}{{ $STATIC_VERSION }}" />
 @endsection
 
 @section('content')
@@ -12,7 +12,7 @@
     <section class="searchBox">
        <div class="yearSelect">
            <div class="inputBox">
-            <input type="text" placeholder="年份" readonly/>
+            <input type="text" placeholder="年份" readonly />
             <span class="icon icon_bottom"></span>
            </div>
            <ul class="selectList">
