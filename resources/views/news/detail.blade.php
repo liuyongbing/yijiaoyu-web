@@ -21,7 +21,7 @@
                 <li class="item">
                     <h3 class="title">{{ $detail['title'] }}</h3>
                     <div class="news_detail">
-                        <p>{{ htmlspecialchars($detail['content'], ENT_HTML401) }}</p>
+                        <p>{!! $detail['content']!!}</p>
                     </div>
                 </li>
             </ul>

@@ -42,7 +42,7 @@
         <ul class="newsUl" id="newslistBox">
         @foreach($items as $item)
             <li class="item">
-                <a href="{{ route('news.show', ['id' => $item['id']]) }}" target="_blank">
+                <a href="{{ route('news.show', ['id' => $item['id']]) }}">
                     <div class="img">
                         <img src="{{ $item['thumb'] }}" alt="{{ $item['title'] }}"/>
                     </div>
