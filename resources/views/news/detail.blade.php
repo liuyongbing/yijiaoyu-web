@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('title', trans('meta.' . $route . '.title'))
+
 @section('style')
 <link rel="stylesheet" href="{{ asset(elixir('css/newsDetail.css')) }}{{ $STATIC_VERSION }}" />
 @endsection

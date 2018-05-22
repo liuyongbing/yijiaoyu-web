@@ -1,10 +1,10 @@
 @extends('layouts.main')
 
+@section('title', trans('meta.' . $route . '.title'))
+
 @section('style')
 <link rel="stylesheet" href="{{ asset(elixir('css/boss.css')) }}{{ $STATIC_VERSION }}" />
 @endsection
-
-@section('title', '创始人')
 
 @section('content')
 <article class="main bossMain">

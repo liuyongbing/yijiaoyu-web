@@ -14,11 +14,13 @@
 Route::get('/', function () {
     return redirect(route('home.index'));
 });
-//关于我们
+//About:关于我们
 Route::resource('about', 'AboutController');
-//创始人
-Route::resource('boss', 'BossController');
-//创始人
+//Brand:品牌
+Route::resource('brand', 'BrandController');
+//Founder:创始人
+Route::resource('founder', 'FounderController');
+//Home:首页
 Route::resource('home', 'HomeController');
-//资讯
+//News:资讯
 Route::resource('news', 'NewsController');

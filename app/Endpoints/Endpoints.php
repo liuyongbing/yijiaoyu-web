@@ -28,8 +28,12 @@ class Endpoints
      */
     public function list($params)
     {
-        $response = ApiClient::get($this->api, $params);
+        if (empty($this->api))
+        {
+            return [];
+        }
         
+        $response = ApiClient::get($this->api, $params);
         return $this->response($response);
     }
     
@@ -131,7 +135,7 @@ class Endpoints
     protected function response($response)
     {
         $result = [];
-        if ($response['status'] === 'success') {
+        if (isset($response['status']) && $response['status'] === 'success') {
             $result = $response['result'];
         } else {
             $result = static::handleError($response);

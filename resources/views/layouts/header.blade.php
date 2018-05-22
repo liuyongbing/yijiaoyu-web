@@ -12,38 +12,33 @@
                 ABOUT US
             </a>
             <ul class="itemUl">
-                <li class="item"><a href="javascript:;">翼教育简介</a></li>
-                <li class="item"><a href="javascript:;">齐天大圣简介</a></li>
-                <li class="item"><a href="javascript:;">品牌理念</a></li>
-                <li class="item"><a href="javascript:;">品牌故事</a></li>
-                <li class="item"><a href="javascript:;">发展历程</a></li>
-                <li class="item"><a href="javascript:;">荣誉证书</a></li>
-                <li class="item"><a href="javascript:;">合作机构</a></li>
+                <li class="item"><a href="{{ route('about.index') }}#group_introduction">集团简介</a></li>
+                <li class="item"><a href="{{ route('about.index') }}#group_culture">集团文化</a></li>
+                <li class="item"><a href="{{ route('about.index') }}#brand_culture">品牌文化</a></li>
+                <li class="item"><a href="{{ route('about.index') }}#brand_list">品牌展示</a></li>
             </ul>
 
         </li>
-        <li class="item "><a href="javascript:;">
-            课程体系<br/>
-            CURRICULUM
-        </a>
+        <li class="item ">
+            <a href="{{ route('brand.index') }}">
+                子品牌<br/>
+                BRANCH BRAND
+            </a>
             <ul class="itemUl">
-                <li class="item"><a href="javascript:;">能力篇</a></li>
-                <li class="item"><a href="javascript:;">品行VS技术</a></li>
-                <li class="item"><a href="javascript:;">营养篇</a></li>
-                <li class="item"><a href="javascript:;">全方位教学体系</a></li>
+                <li class="item"><a href="javascript:;">齐天大圣</a></li>
+                <li class="item"><a href="javascript:;">口袋猫</a></li>
+                <li class="item"><a href="javascript:;">童画镇</a></li>
+                <li class="item"><a href="javascript:;">学会玩</a></li>
+                <li class="item"><a href="javascript:;">贝乐淘</a></li>
             </ul>
         </li>
-        <li class="item "><a href="javascript:;">
-            全国校区<br/>
-            BRANCH SCHOOLS
-        </a></li>
         <li class="item ">
-            <a href="{{ route('boss.index') }}">创始人<br/>
+            <a href="{{ route('founder.index') }}">创始人<br/>
             FOUNDER
             </a>
             <ul class="itemUl">
-                <li class="item"><a href="{{ route('boss.index') }}#chairman">董事长</a></li>
-                <li class="item"><a href="{{ route('boss.index') }}#ceo">CEO</a></li>
+                <li class="item"><a href="{{ route('founder.index') }}#chairman">董事长</a></li>
+                <li class="item"><a href="{{ route('founder.index') }}#ceo">CEO</a></li>
             </ul>
         </li>
         <li class="item ">

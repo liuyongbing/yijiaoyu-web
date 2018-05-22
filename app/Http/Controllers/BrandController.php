@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-class AboutController extends Controller
+class BrandController extends Controller
 {
     public function init()
     {
         parent::init();
         
-        $this->route = 'about';
+        $this->route = 'brand';
     }
 }

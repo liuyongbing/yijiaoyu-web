@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('title', trans('meta.' . $route . '.title'))
+
 @section('content')
 <article class="main">
     <section class="banner swiper-container">
