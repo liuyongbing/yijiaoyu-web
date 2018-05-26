@@ -33,7 +33,7 @@
     display: block;
 }
 .header .h_slider>.item{
-    padding:0 22px;
+    padding:0 35px;
     text-align: center;
     position: relative;
     float: left;
@@ -43,10 +43,16 @@
     vertical-align: middle;
     line-height: 20px;
     font-weight: bold;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 .header .h_slider>.item:hover,.header .h_slider>.item:focus{
    border-bottom: 2px solid #56b2dd;
+}
+.header .h_slider>.item:last-of-type:hover,.header .h_slider:last-of-type>.item:focus{
+    border-bottom: none;
 }
 .h_slider .active{
     border-bottom: 2px solid #56b2dd;
@@ -68,13 +74,19 @@
     transform: translateX(-50%);
 }
  .h_slider>.item .itemUl{
+     width: 100%;
      position: absolute;
      border-radius: 10px;
      top:90px;
-	 left:20px;
+	 left:50%;
      display: none;
      background: #042a3c;
      z-index: 200;
+     -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+     -ms-transform: translateX(-50%);
+     -o-transform: translateX(-50%);
+     transform: translateX(-50%);
  }
 .h_slider>.item .itemUl>.item{
     height: 30px;
@@ -97,11 +109,13 @@
 }
 .header .h_s_enter>a:hover,.header .h_s_enter>a:focus{
     background: #333;
-
 }
 .header .h_tel{
     font-size: 24px;
    padding-right: 23px;
+}
+.banner{
+    text-align: center;
 }
 .footer{
     width: 100%;

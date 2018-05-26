@@ -17,6 +17,9 @@ Route::get('/', function () {
 //About:关于我们
 Route::resource('about', 'AboutController');
 //Brand:品牌
+Route::get('brand/pocketcat', 'BrandController@pocketcat')->name('brand.pocketcat');
+Route::get('brand/town', 'BrandController@town')->name('brand.town');
+Route::get('brand/wukong', 'BrandController@wukong')->name('brand.wukong');
 Route::resource('brand', 'BrandController');
 //Founder:创始人
 Route::resource('founder', 'FounderController');

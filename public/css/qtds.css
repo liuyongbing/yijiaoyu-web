@@ -1,0 +1,395 @@
+.brand_center{
+    padding-top: 132px;
+    text-align: center;
+}
+.brand_center .title_tab{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    border-bottom: 1px solid #dddddd;
+}
+.brand_center .title_tab>a{
+    font-size: 30px;
+    padding:0 43px ;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.brand_center .title_tab>a:last-of-type{
+    display: inline-block;
+    font-size: 14px;
+    color: #ffffff;
+    background: #0587d2;
+    height: 36px;
+    line-height: 36px;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+.kdm_center .title_tab>a:last-of-type{
+    background: #fe6ba2;
+}
+.brand_center .title_tab>a:last-of-type:hover,.brand_center .title_tab>a:last-of-type:focus{
+    background: #333333;
+    color: #ffffff;
+}
+
+.brand_center .title_tab>a:hover,.brand_center .title_tab>a:focus{
+  color: #0587d2;
+}
+.kdm_center .title_tab>a:hover,.kdm_center .title_tab>a:focus{
+    color: #fe6ba2;
+}
+.user_brand,.self_brand{
+    display: none;
+}
+.brand_center .active{
+    color: #0587d2;
+}
+.kdm_center .active{
+    color: #fe6ba2 ;
+}
+.com_brand,.user_brand,.self_brand{
+    padding-top: 100px;
+    text-align: center;
+}
+ .com_brand img{
+    width: auto;
+}
+ .com_brand .info{
+     padding-top: 44px;
+     font-size: 14px;
+     line-height: 30px;
+ }
+ .com_brand .p1{
+     padding-bottom: 72px;
+ }
+ .com_brand .p2{
+     width: 100%;
+     background: #eeeeee;
+     padding: 38px 0;
+ }
+ .kdm_brand .p2{
+     background: none;
+     margin: 0 10px;
+ }
+ .com_brand .p2>a{
+     width: 10%;
+     display: inline-block;
+     padding: 0 132px;
+ }
+.kdm_brand .p2>a{
+    width: auto;
+    padding: 0 10px;
+}
+.com_brand .p2>a:nth-of-type(2){
+   border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+.kdm_brand .p2>a:nth-of-type(2){
+   border: none;
+}
+.com_brand .p3{
+    padding: 98px 0;
+    margin: 0 auto;
+}
+.kdm_brand .p3{
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+.com_brand .p3 .title{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.kdm_brand .p3 .title{
+    height: 247px;
+    line-height: 247px;
+    background: #4ecdcb;
+    font-size: 46px;
+    color: #ffffff;
+}
+.com_brand .p3 .info{
+    font-size: 14px;
+    line-height: 30px;
+}
+.kdm_brand .p3 .info{
+    width: 80%;
+   padding-top: 0;
+    margin: 0 auto;
+}
+.kdm_brand .p3 .info img{
+   width: 100%
+}
+.com_brand .p3 .info>p{
+     height: 40px;
+    line-height: 40px;
+}
+.com_brand .p4{
+    padding: 108px 0;
+    background: #eeeeee;
+}
+.com_brand .p4 img{
+    width: 69.68%;
+}
+.com_brand .p5{
+    font-size: 50px;
+    padding: 68px 0;
+}
+.com_brand .p5 .title{
+  padding-bottom: 52px;
+}
+.com_brand .p5 img{
+    padding: 20px 17px;
+}
+
+.fixedNav{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #ffffff;
+}
+.self_brand>div{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+}
+.self_brand .p1 .info{
+   font-size: 30px;
+}
+.self_brand .p1 .info .age{
+    color: #007aff;
+}
+.self_brand .p1 .info .time{
+    color: #fff;
+    background: #e3521f;
+}
+.self_brand>div a{
+    width: 100%;
+    height: auto;
+    display:inline-block;
+    background: #f4f4f4;
+    padding: 10px 0;
+}
+.self_brand>div a>img{
+   width: 80%;
+}
+.self_brand  .title{
+    width: 80%;
+    height: 140px;
+    font-size: 46px;
+    font-weight: bolder;
+
+    text-align: center;
+    margin: 0 auto;
+}
+.self_brand  .title .icon{
+    width: 75px;
+    height: 52px;
+    display: inline-block;
+    vertical-align:middle;
+    margin-top: -3px;
+    background: url("../imgs/icon/3d.png")no-repeat center;
+}
+.self_brand .title>p{
+    font-size: 30px;
+    line-height: 40px;
+}
+.user_brand>div{
+    width: 71.8%;
+    max-width: 1380px;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    padding: 30px 0;
+}
+.user_brand >div>.title{
+    font-size: 46px;
+    height: 60px;
+    line-height: 60px;
+}
+.user_brand .userBox{
+    width: 100%;
+    padding: 30px 0;
+    position: relative;
+}
+.user_brand .userBox .item{
+    width: 22.6%;
+    max-width: 304px;
+    height: 304px;
+    max-height: 394px;
+    border: 1px solid #dddddd;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+.user_brand .userBox .item +.item{
+    margin-left:24px ;
+}
+.user_brand .userBox .item:nth-of-type(5){
+    margin-left: 0;
+}
+.user_brand .userBox .item:nth-of-type(9){
+    margin-left: 0;
+}
+.user_brand .userBox .item .title{
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px !important;
+}
+.user_brand .userBox .item img{
+    width: 100%;
+    height:100%;
+    max-height: 394px;
+}
+.user_brand .userBox .item .mark{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    background: rgba(255,255,255,0.9);
+    padding: 10px 0;
+    transition: all 0.3s;
+   opacity: 0;
+}
+.user_brand .userBox .item:hover .mark,.user_brand .userBox .item:focus .mark{
+   opacity: 1;
+}
+.user_brand .p3 img{
+    width: 80%;
+    border-radius: 10px;
+}
+.kdm_user_brand .kdm_user .item{
+    width: 30%;
+    max-width: 400px;
+}
+.kdm_user_brand .userBox .item:nth-of-type(4){
+    margin-left:0;
+    margin-right: 24px;
+}
+.kdm_user_brand .userBox .item:nth-of-type(7){
+    margin-left: 0;
+}
+.kdm_user_brand .userBox .item:nth-of-type(10){
+    margin-left: 0;
+}
+.kdm_user_brand .userBox .item:nth-of-type(8){
+   margin-right: 24px;
+}
+@media all and (max-width: 1160px) and (min-width: 448px) {
+    .brand_center{
+        padding-top: 50px;
+    }
+    .fixedNav{
+        width: 100%;
+        height: 50px !important;
+        line-height: 50px !important;
+    }
+    .user_brand>div>.title,.com_brand .title,.self_brand>div>.title{
+        font-size: 24px;
+        background-image: none;
+    }
+    .self_brand>div>.title p{
+        font-size: 14px;
+    }
+     .user_brand>div{
+         width: 98%;
+     }
+    .user_brand>div .item{
+        width:192px !important;
+        height: 200px !important;
+        margin: 6px !important;
+    }
+    .user_brand  .item .mark .title{
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .brand_center .title_tab>a{
+        font-size: 20px;
+        padding:0 15px ;
+    }
+    .brand_center .title_tab>a:last-of-type{
+       margin-top: -10px;
+    }
+    .com_brand .p5 {
+        padding: 20px 0;
+    }
+    .com_brand .p5 .title {
+        padding-bottom: 10px;
+    }
+    .kdm_brand .p2>a {
+         width: 40%;
+        padding: 10px 0;
+
+    }
+
+}
+@media all and (max-width: 447px) and (min-width: 320px){
+    .brand_center{
+        padding-top: 30px;
+    }
+    .fixedNav{
+        width: 100%;
+        height: 40px !important;
+        line-height: 40px !important;
+    }
+    .user_brand>div>.title,.com_brand .title,.self_brand>div>.title{
+        font-size: 14px;
+        background-image: none;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .self_brand>div>.title p{
+        font-size: 12px;
+    }
+    .kdm_brand .p3 .title{
+        height: 100px;
+        line-height: 100px;
+        font-size: 16px;
+    }
+    .brand_center .title_tab>a{
+        font-size: 14px;
+        padding:0 5px ;
+    }
+    .brand_center .title_tab>a:last-of-type{
+        margin-top: -10px;
+    }
+    .user_brand>div{
+        width: 98%;
+    }
+    .user_brand .userBox{
+        padding: 0;
+    }
+    .user_brand>div .item{
+        width:169px !important;
+        height: 200px !important;
+        margin: 6px !important;
+    }
+    .user_brand  .item .mark .title{
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .user_brand  .item .mark .info{
+        font-size: 12px;
+    }
+    .com_brand .p5 {
+        padding: 20px 0;
+    }
+    .com_brand .p5 .title {
+        padding-bottom: 10px;
+    }
+    .kdm_brand .p2>a {
+        width: 100%;
+        padding: 5px 0;
+        margin-left: -18px;
+    }
+}

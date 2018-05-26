@@ -20,16 +20,16 @@
 
         </li>
         <li class="item ">
-            <a href="{{ route('brand.index') }}">
+            <a href="{{ route('brand.wukong') }}">
                 子品牌<br/>
                 BRANCH BRAND
             </a>
             <ul class="itemUl">
-                <li class="item"><a href="javascript:;">齐天大圣</a></li>
-                <li class="item"><a href="javascript:;">口袋猫</a></li>
-                <li class="item"><a href="javascript:;">童画镇</a></li>
-                <li class="item"><a href="javascript:;">学会玩</a></li>
-                <li class="item"><a href="javascript:;">贝乐淘</a></li>
+                <li class="item"><a href="{{ route('brand.wukong') }}">齐天大圣</a></li>
+                <li class="item"><a href="{{ route('brand.pocketcat') }}">口袋猫</a></li>
+                <li class="item"><a href="{{ route('brand.town') }}">童画镇</a></li>
+                <!--li class="item"><a href="javascript:;">学会玩</a></li-->
+                <!--li class="item"><a href="javascript:;">贝乐淘</a></li-->
             </ul>
         </li>
         <li class="item ">
