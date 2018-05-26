@@ -31,7 +31,12 @@ class BrandController extends Controller
      */
     public function pocketcat()
     {
+        $detail = [];
         
+        return view($this->route . '.pocketcat', [
+            'route'     => $this->route,
+            'detail'    => $detail
+        ]);
     }
     
     /**
@@ -39,6 +44,11 @@ class BrandController extends Controller
      */
     public function town()
     {
+        $detail = [];
         
+        return view($this->route . '.town', [
+                'route'     => $this->route,
+                'detail'    => $detail
+        ]);
     }
 }
