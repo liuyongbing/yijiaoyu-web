@@ -305,7 +305,7 @@
                  </li>
              </ul>
          </div>
-         <div class="p3 clear">
+         <div class="p3">
              <h3 class="title">客服团队</h3>
              <img src="/imgs/qtds/kefu.jpg" alt="客服"/>
          </div>
