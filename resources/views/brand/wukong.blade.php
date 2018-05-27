@@ -311,7 +311,7 @@
          </div>
      </section>
 
- </article>
+ </article>>
 @endsection
 
 @section('script')

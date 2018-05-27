@@ -98,8 +98,12 @@
     padding-top: 50px;
     padding-bottom: 0;
 }
-.com_brand .p3 .title{
-    font-size: 50px;
+.com_brand .p1 .title{
+    font-size: 36px;
+    padding-bottom: 40px;
+}
+.com_brand .p3 .title {
+    font-size: 46px;
     font-weight: bolder;
 }
 .kdm_brand .p3 .title{
@@ -108,6 +112,10 @@
     background: #4ecdcb;
     font-size: 46px;
     color: #ffffff;
+}
+.thz_brand .p3{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .com_brand .p3 .info{
     font-size: 14px;
@@ -283,6 +291,135 @@
 .kdm_user_brand .userBox .item:nth-of-type(8){
    margin-right: 24px;
 }
+.fabletown_main .joinUs_brand{
+    display: none;
+}
+.fabletown_main .joinUs_brand .p1,.fabletown_main .joinUs_brand .joinus_from{
+    width:66%;
+    max-width: 1031px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+.fabletown_main  img{
+    width: 85%;
+}
+.fabletown_main .joinUs_brand .p2{
+    width: 100%;
+    background: #444444;
+    padding: 78px 0;
+    margin-bottom: 40px;
+}
+.fabletown_main .self_brand>div a{
+  background: none;
+}
+.fabletown_main .ta_p2{
+    background: #dcdcdc;
+}
+.fabletown_main .joinUs_brand .p2 .imgbox{
+    width:70.67%;
+    max-width: 1357px;
+    margin: 0 auto;
+}
+.joinUs_brand .top{
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    padding-bottom: 20px;
+    color: #4444;
+}
+.joinUs_brand .top>span{
+   padding-left: 30px;
+}
+.joinUs_brand .top>a{
+    width: 190px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffffff;
+    float: left;
+}
+.joinUs_brand .top>a:first-of-type{
+   background:#dc251f;
+}
+.joinUs_brand .top>a:nth-of-type(2){
+    background:#000;
+}
+.joinUs_brand .formBox{
+    border: 1px solid #eeeeee;
+    padding-top: 18px;
+    padding-bottom: 26px;
+    height: 334px;
+}
+.joinUs_brand .formBox>div{
+   width: 50%;
+}
+.joinUs_brand .formBox>div.left{
+    width: 48%;
+    height: 100%;
+    text-align: center;
+    background: url("../imgs/fabletwon/icont.png")no-repeat center;
+    position: relative;
+    font-size: 20px;
+    border-right: 1px solid #dddddd;
+}
+.joinUs_brand div.left dd:nth-of-type(1){
+    position: absolute;
+    top: 119px;
+    left: 242px;
+}
+.joinUs_brand div.left dd:nth-of-type(2){
+    position: absolute;
+    top: 199px;
+    left: 242px;
+}
+.joinUs_brand div.left dd:nth-of-type(3){
+    position: absolute;
+    top: 275px;
+    left: 242px;
+}
+.joinUs_brand div.right .input_box{
+    padding: 6px 0
+}
+.joinUs_brand div.right .address input{
+    margin: 10px 0;
+    margin-left: 54px;
+    padding: 6px 0;
+
+}
+.joinUs_brand div.right .input_group{
+    width: 60%;
+    margin: 0 auto;
+}
+.joinUs_brand div.right .input_box input,.joinUs_brand div.right .input_box select{
+    height: 24px;
+    line-height: 24px;
+}
+.joinUs_brand div.right label{
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+}
+.joinUs_brand div.right button{
+    height: 35px;
+    color: #ffff;
+    line-height: 35px;
+    padding:0 50px;
+    background:#ed2647 ;
+    border: none;
+    display: block;
+    margin-left: 50px;
+}
+.joinUs_brand div.right input[type="checkbox"]{
+    display: inline-block;
+    vertical-align: middle;
+}
+.joinUs_brand .checkBox a{
+  color:#ed2647 ;
+}
+.joinUs_brand .checkBox a:hover{
+    text-decoration: underline;
+}
 @media all and (max-width: 1160px) and (min-width: 448px) {
     .brand_center{
         padding-top: 50px;
@@ -329,6 +466,19 @@
          width: 40%;
         padding: 10px 0;
 
+    }
+    .com_brand, .user_brand, .self_brand{
+        padding-top:0;
+    }
+    .joinUs_brand div.left{
+        display: none;
+        border: none;
+    }
+    .joinUs_brand .top>span{
+        display: none;
+    }
+    .joinUs_brand div.right{
+        width: 100%;
     }
 
 }
@@ -391,5 +541,38 @@
         width: 100%;
         padding: 5px 0;
         margin-left: -18px;
+    }
+    .com_brand, .user_brand, .self_brand{
+        padding-top:0;
+    }
+    .joinUs_brand div.left{
+        display: none;
+        border: none;
+    }
+    .joinUs_brand .top>a{
+        width: 100px;
+        font-size: 12px;
+    }
+    .joinUs_brand .top>span{
+        display: none;
+    }
+    .joinUs_brand div.right{
+        width: 100%;
+    }
+    .joinUs_brand div.right input{
+        margin-left: 0;
+    }
+    .joinUs_brand div.right .address input{
+        margin: 5px auto;
+        margin-left: 52px;
+    }
+    .joinUs_brand div.right .input_group{
+        width: 98%;
+    }
+    .joinUs_brand div.right .input_box{
+        padding: 3px 0;
+    }
+    .joinUs_brand div.right .input_box input, .joinUs_brand div.right .input_box select{
+
     }
 }
