@@ -58,6 +58,7 @@ body {
     -moz-box-sizing: content-box;
     -o-box-sizing: content-box;
     box-sizing: content-box;
+    position:relative
 }
 ul li {
     list-style-type: none;

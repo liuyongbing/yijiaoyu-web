@@ -199,6 +199,26 @@
      right: 50px;
     background: url("../imgs/logo/right.png") no-repeat center center;
 }
+.goTop{
+    width:60px;
+    height:60px;
+    display:block;
+    color:#fff;
+    background:rgba(0,0,0,0.3);
+    position:fixed;
+    right:30px;
+    bottom:60px;
+    z-index:100000;
+    border-radius:50%;
+    text-align:center;
+    font-size:26px;  
+    line-height:60px; 
+    display:none
+      
+}
+.goTop span{
+    display:block
+}
 @media screen  and (max-width: 1290px) and (min-width: 320px){
     .header {
         width: 100%;
