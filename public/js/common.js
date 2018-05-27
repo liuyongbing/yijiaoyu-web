@@ -29,6 +29,18 @@ function bannerScroll(){
     }
 
 };
+//返回顶部
+function goTopShow(){
+ 
+    if($(window).scrollTop()>50){
+        $('.goTop').show(500)
+    }else{
+         $('.goTop').hide(500)
+    }
+}
+function goBlackTop(){    
+   $(window).scrollTop(0)
+}
 //响应slider
 function slider(){
     if($("#slider").is(":hidden")){
@@ -41,8 +53,15 @@ function slider(){
 $(function(){
     sliderShow();
     bannerScroll();
+    $(window).scroll(function(){
+        goTopShow(); 
+    })
+   
     $(".sliderShowBtn").click(function(){
            slider()
+    })
+    $('.goTop').click(function(){
+        goBlackTop()
     })
 
 });

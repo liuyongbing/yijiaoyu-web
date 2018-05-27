@@ -18,5 +18,5 @@
         <li class="item fl"><a href="javascript:;">韩国嘉泉大学跆拳道特长生保送点</a></li>
     </ul>
     <p class="clear company">Copyright@ 2018 齐天大圣版权所有 宜昌翼教教育有限公司 鄂ICP备13017119号-2</p>
-
 </footer>
+<a href="javascript:;" class="goTop">Top</a>
