@@ -26,7 +26,6 @@
 <script src="{{ asset(elixir('util/jquery-3.1.0.min.js')) }}{{ $STATIC_VERSION }}"></script>
 <script src="{{ asset(elixir('util/swiper/swiper.min.js')) }}{{ $STATIC_VERSION }}"></script>
 <script src="{{ asset(elixir('js/common.js')) }}{{ $STATIC_VERSION }}"></script>
-
 <script src="{{ asset(elixir('js/news.js')) }}{{ $STATIC_VERSION }}"></script>
 @yield('script')
 </html>
