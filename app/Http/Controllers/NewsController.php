@@ -28,23 +28,28 @@ class NewsController extends Controller
         $page = $request->input('page', 1);
         $size = Dictionary::PAGE_SIZE;
         
-        $filters = [];
+        $params = [];
         if (!empty($year))
         {
-            $filters['show_year'] = $year;
+            $params['show_year'] = $year;
         }
         if (!empty($categoryId))
         {
-            $filters['category_id'] = $categoryId;
+            $params['category_id'] = $categoryId;
         }
-        $filters['status'] = 1;
+        $params['status'] = 1;
         
-        $results = $this->repository->list($filters, $page, $size);
+        $results = $this->repository->list($params, $page, $size);
         
         $repository = new CategoriesRepository();
         $categories = $repository->all();
         
         $years = $this->repository->years();
+        
+        $filters = [
+            'year' => isset($params['show_year']) ? $params['show_year'] : 0,
+            'category_id' => isset($params['category_id']) ? $params['category_id'] : 0,
+        ];
         
         return view($this->route . '.list', [
             'route' => $this->route,

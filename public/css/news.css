@@ -104,7 +104,6 @@ background:#d94d2d ;
 }
 .newsList .newsUl .item:hover{
    background: #eee;
-
 }
 .newsList .newsUl .item .img{
     width: 179px;
@@ -173,9 +172,9 @@ background:#d94d2d ;
     transition: all 0.3s;
 }
 .paginationUl .item:nth-of-type(1)>a{
-border-left:1px solid #dddddd ;
+    border-left:1px solid #dddddd ;
 }
-.paginationUl .item>a:hover{
-   background: #56b2dd;
+.paginationUl .item .active, .paginationUl .item>a:hover{
+    background: #56b2dd;
     color: #ffffff;
 }
