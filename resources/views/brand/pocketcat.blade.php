@@ -213,74 +213,106 @@
             <ul class="userBox">
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/yf01.png" alt="杨帆"/>
+                        <img src="/imgs/kdm/person02/01.jpg" alt="赖妮雯"/>
                         <div class="mark">
-                            <h3 class="title">杨帆</h3>
+                            <h3 class="title">赖妮雯</h3>
                         </div>
                     </a>
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/zcp02.png" alt="詹超鹏"/>
+                        <img src="/imgs/kdm/person02/02.jpg" alt="徐露"/>
                         <div class="mark">
-                            <h3 class="title">詹超鹏</h3>
+                            <h3 class="title">徐露</h3>
                         </div>
                     </a>
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/zcq03.png" alt="赵春桥"/>
+                        <img src="/imgs/kdm/person02/03.jpg" alt="付清雯"/>
                         <div class="mark">
-                            <h3 class="title">赵春桥</h3>
+                            <h3 class="title">付清雯</h3>
                         </div>
                     </a>
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/xy04.png" alt="肖宇"/>
+                        <img src="/imgs/kdm/person02/04.jpg" alt="彭小蜜"/>
                         <div class="mark">
-                            <h3 class="title">肖宇</h3>
+                            <h3 class="title">彭小蜜</h3>
                         </div>
                     </a>
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/lns05.png" alt="刘南山"/>
+                        <img src="/imgs/kdm/person02/05.jpg" alt="张耀丹"/>
                         <div class="mark">
-                            <h3 class="title">刘南山</h3>
+                            <h3 class="title">张耀丹</h3>
                         </div>
                     </a>
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/cml06.png" alt="陈孟龙"/>
+                        <img src="/imgs/kdm/person02/06.jpg" alt="雷婉婷"/>
                         <div class="mark">
-                            <h3 class="title">陈孟龙</h3>
+                            <h3 class="title">雷婉婷</h3>
                         </div>
                     </a>
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/ty07.png" alt="唐宇"/>
+                        <img src="/imgs/kdm/person02/07.jpg" alt="蒋欢"/>
                         <div class="mark">
-                            <h3 class="title">唐宇</h3>
+                            <h3 class="title">蒋欢</h3>
                         </div>
                     </a>
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/kk08.png" alt="胡兴太"/>
+                        <img src="/imgs/kdm/person02/08.jpg" alt="刘梓萱"/>
                         <div class="mark">
-                            <h3 class="title">胡兴太</h3>
+                            <h3 class="title">刘梓萱</h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="javascript:;">
+                        <img src="/imgs/kdm/person02/09.jpg" alt="钟雨婷"/>
+                        <div class="mark">
+                            <h3 class="title">钟雨婷</h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="javascript:;">
+                        <img src="/imgs/kdm/person02/10.jpg" alt="徐睿"/>
+                        <div class="mark">
+                            <h3 class="title">徐睿</h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="javascript:;">
+                        <img src="/imgs/kdm/person02/11.jpg" alt="袁洁"/>
+                        <div class="mark">
+                            <h3 class="title">袁洁</h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="javascript:;">
+                        <img src="/imgs/kdm/person02/12.jpg" alt="皮笠"/>
+                        <div class="mark">
+                            <h3 class="title">皮笠</h3>
                         </div>
                     </a>
                 </li>
             </ul>
         </div>
-        <!--div class="p3"-->
+        <div class="p3 clear">
             <!--<h3 class="title">客服团队</h3>-->
             <!--<img src="/imgs/qtds/kefu.jpg" alt="客服"/>-->
-        <!--/div-->
+        </div>
     </section>
 
 </article>
