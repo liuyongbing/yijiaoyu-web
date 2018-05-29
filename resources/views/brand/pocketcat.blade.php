@@ -124,56 +124,61 @@
                             <p class="info">口袋猫总经办</p>
                         </div>
                     </a>
-                </li>   <li class="item">
-                <a href="javascript:;">
-                    <img src="/imgs/kdm/person01/03.jpg" alt="邓萍飞"/>
-                    <div class="mark">
-                        <h3 class="title">邓萍飞</h3>
-                        <p class="info">中国舞技术总监</p>
-                    </div>
-                </a>
-            </li>   <li class="item">
-                <a href="javascript:;">
-                    <img src="/imgs/kdm/person01/04.jpg" alt="刘蓉"/>
-                    <div class="mark">
-                        <h3 class="title">刘蓉</h3>
-                        <p class="info">拉丁舞技术总监</p>
-                    </div>
-                </a>
-            </li>   <li class="item">
-                <a href="javascript:;">
-                    <img src="/imgs/kdm/person01/05.jpg" alt="李晓雨"/>
-                    <div class="mark">
-                        <h3 class="title">李晓雨</h3>
-                        <p class="info">客服总监</p>
-                    </div>
-                </a>
-            </li>   <li class="item">
-                <a href="javascript:;">
-                    <img src="/imgs/kdm/person01/06.jpg" alt="汤立伟"/>
-                    <div class="mark">
-                        <h3 class="title">汤立伟</h3>
-                        <p class="info">区域馆长</p>
-                    </div>
-                </a>
-            </li>   <li class="item">
-                <a href="javascript:;">
-                    <img src="/imgs/kdm/person01/07.jpg" alt="陶孟娟"/>
-                    <div class="mark">
-                        <h3 class="title">陶孟娟</h3>
-                        <p class="info">区域馆长</p>
-                    </div>
-                </a>
-            </li>
+                </li>
                 <li class="item">
-                <a href="javascript:;">
-                    <img src="/imgs/kdm/person01/08.jpg" alt="付清雯"/>
-                    <div class="mark">
-                        <h3 class="title">付清雯</h3>
-                        <p class="info">区域馆长</p>
-                    </div>
-                </a>
-            </li>
+                    <a href="javascript:;">
+                        <img src="/imgs/kdm/person01/03.jpg" alt="邓萍飞"/>
+                        <div class="mark">
+                            <h3 class="title">邓萍飞</h3>
+                            <p class="info">中国舞技术总监</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="javascript:;">
+                        <img src="/imgs/kdm/person01/04.jpg" alt="刘蓉"/>
+                        <div class="mark">
+                            <h3 class="title">刘蓉</h3>
+                            <p class="info">拉丁舞技术总监</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="javascript:;">
+                        <img src="/imgs/kdm/person01/05.jpg" alt="李晓雨"/>
+                        <div class="mark">
+                            <h3 class="title">李晓雨</h3>
+                            <p class="info">客服总监</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="javascript:;">
+                        <img src="/imgs/kdm/person01/06.jpg" alt="汤立伟"/>
+                        <div class="mark">
+                            <h3 class="title">汤立伟</h3>
+                            <p class="info">区域馆长</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="javascript:;">
+                        <img src="/imgs/kdm/person01/07.jpg" alt="陶孟娟"/>
+                        <div class="mark">
+                            <h3 class="title">陶孟娟</h3>
+                            <p class="info">区域馆长</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="javascript:;">
+                        <img src="/imgs/kdm/person01/08.jpg" alt="付清雯"/>
+                        <div class="mark">
+                            <h3 class="title">付清雯</h3>
+                            <p class="info">拉丁舞技术总监</p>
+                        </div>
+                    </a>
+                </li>
                 <li class="item">
                     <a href="javascript:;">
                         <img src="/imgs/kdm/person01/09.jpg" alt="陈浩然"/>

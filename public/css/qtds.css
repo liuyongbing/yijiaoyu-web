@@ -275,8 +275,8 @@
     border-radius: 10px;
 }
 .kdm_user_brand .kdm_user .item{
-    width: 30%;
-    max-width: 400px;
+    width: 412px;
+    height: 527px;
 }
 .kdm_user_brand .userBox .item:nth-of-type(4){
     margin-left:0;

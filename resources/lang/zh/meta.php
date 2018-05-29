@@ -19,7 +19,7 @@ return [
         'description' => '',
     ],
     'brand' => [
-        'title' => '子品种',
+        'title' => '子品牌',
         'keyword' => '',
         'description' => '',
     ],
