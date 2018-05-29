@@ -23,10 +23,23 @@ class NewsController extends Controller
      */
     public function index(Request $request)
     {
+        $year = $request->input('year', 0);
+        $categoryId = $request->input('category_id', 0);
         $page = $request->input('page', 1);
         $size = Dictionary::PAGE_SIZE;
         
-        $results = $this->repository->list([], $page, $size);
+        $filters = [];
+        if (!empty($year))
+        {
+            $filters['show_year'] = $year;
+        }
+        if (!empty($categoryId))
+        {
+            $filters['category_id'] = $categoryId;
+        }
+        $filters['status'] = 1;
+        
+        $results = $this->repository->list($filters, $page, $size);
         
         $repository = new CategoriesRepository();
         $categories = $repository->all();
@@ -38,7 +51,7 @@ class NewsController extends Controller
             'items' => isset($results['list']) ? $results['list'] : [],
             'categories' => $categories['list'],
             'years' => $years,
-            'filters' => [],
+            'filters' => $filters,
             'pagination' => [
                 'route' => $this->route . '.index',
                 'page' => $page,

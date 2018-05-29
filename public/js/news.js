@@ -10,7 +10,10 @@ $(function(){
             $(this).next('.selectList').slideDown(300);
             $(".selectList .item a").click(function(){
                 var text = $(this).text();
-                $(this).parents(".selectList").prev('.inputBox').children('input[type="text"]').val(text);
+                var value = $(this).attr('data-id');
+                var obj = $(this).parents(".selectList").prev('.inputBox').children('input[type="text"]');
+                obj.val(text);
+                obj.attr('data-id', value);
                 $(this).parents(".selectList").slideUp(300);
                 that.children(".icon").removeClass('icon-active');
                 that.next('.selectList').slideUp(300)
