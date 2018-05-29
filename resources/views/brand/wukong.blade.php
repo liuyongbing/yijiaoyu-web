@@ -200,9 +200,9 @@
              </li>
                  <li class="item">
                  <a href="javascript:;">
-                     <img src="/imgs/qtds/person01/xls08.png" alt="肖烈师"/>
+                     <img src="/imgs/qtds/person01/xls08.png" alt="肖烈斯"/>
                      <div class="mark">
-                         <h3 class="title">肖烈师</h3>
+                         <h3 class="title">肖烈斯</h3>
                          <p class="info">区域馆长</p>
                      </div>
                  </a>
@@ -229,7 +229,7 @@
                      <a href="javascript:;">
                          <img src="/imgs/qtds/person01/yzc11.png" alt="姚志冲"/>
                          <div class="mark">
-                             <h3 class="title">姚志冲</h3>
+                             <h3 class="title">姚志聪</h3>
                              <p class="info">区域馆长</p>
                          </div>
                      </a>
@@ -297,9 +297,9 @@
                  </li>
                  <li class="item">
                      <a href="javascript:;">
-                         <img src="/imgs/qtds/person02/kk08.png" alt="胡兴太"/>
+                         <img src="/imgs/qtds/person02/kk08.png" alt="胡兴泰"/>
                          <div class="mark">
-                             <h3 class="title">胡兴太</h3>
+                             <h3 class="title">胡兴泰</h3>
                          </div>
                      </a>
                  </li>
