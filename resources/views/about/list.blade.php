@@ -32,20 +32,20 @@
                 <img src="imgs/about/jtwh.png{{ $STATIC_VERSION }}" alt="集团文化"/>
             </span>
         </h3>
-       <div class="groupImgs">
-           <a href="javascript:;">
-             <img src="imgs/about/ab06.png{{ $STATIC_VERSION }}" alt="企业理念"/>
-           </a>
-           <a href="javascript:;">
-              <img src="imgs/about/ab05.png{{ $STATIC_VERSION }}" alt="企业愿景"/>
-           </a>
-           <a href="javascript:;">
-           <img src="imgs/about/ab06.png{{ $STATIC_VERSION }}" alt="企业口号"/>
-           </a>
-           <a href="javascript:;">
-           <img src="imgs/about/ab07.png{{ $STATIC_VERSION }}" alt="核心价值"/>
-           </a>
-       </div>
+        <div class="groupImgs">
+            <a href="javascript:;">
+                <img src="imgs/about/ab04.png{{ $STATIC_VERSION }}" alt="企业理念"/>
+            </a>
+            <a href="javascript:;">
+                <img src="imgs/about/ab05.png{{ $STATIC_VERSION }}" alt="企业愿景"/>
+            </a>
+            <a href="javascript:;">
+                <img src="imgs/about/ab06.png{{ $STATIC_VERSION }}" alt="企业口号"/>
+            </a>
+            <a href="javascript:;">
+                <img src="imgs/about/ab07.png{{ $STATIC_VERSION }}" alt="核心价值"/>
+            </a>
+        </div>
     </section>
     <!-- 集团文化 End -->
     <!-- 品牌文化-->
@@ -58,7 +58,7 @@
         </h3>
         <div class="brandImgs">
             <a href="javascript:;">
-                <img src="imgs/about/mid.png{{ $STATIC_VERSION }}" alt="mid"/>
+                <img src="imgs/about/brand_culture.png{{ $STATIC_VERSION }}" alt="mid"/>
             </a>
         </div>
     </section>
