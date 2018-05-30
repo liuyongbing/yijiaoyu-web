@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', trans('meta.' . $route . '.title'))
+@section('title', trans('brand.' . $brand))
 
 @section('style')
 <link rel="stylesheet" href="{{ asset(elixir('css/qtds.css')) }}{{ $STATIC_VERSION }}" />

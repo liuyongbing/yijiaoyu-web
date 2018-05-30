@@ -19,10 +19,12 @@ class BrandController extends Controller
     public function wukong()
     {
         $detail = [];
+        $brand = 'wukong';
         
-        return view($this->route . '.wukong', [
+        return view($this->route . '.' . $brand, [
             'route'     => $this->route,
-            'detail'    => $detail
+            'detail'    => $detail,
+            'brand'     => $brand
         ]);
     }
     
@@ -32,10 +34,12 @@ class BrandController extends Controller
     public function pocketcat()
     {
         $detail = [];
+        $brand = 'pocketcat';
         
-        return view($this->route . '.pocketcat', [
+        return view($this->route . '.' . $brand, [
             'route'     => $this->route,
-            'detail'    => $detail
+            'detail'    => $detail,
+            'brand'     => $brand
         ]);
     }
     
@@ -45,10 +49,12 @@ class BrandController extends Controller
     public function town()
     {
         $detail = [];
+        $brand = 'town';
         
-        return view($this->route . '.town', [
-                'route'     => $this->route,
-                'detail'    => $detail
+        return view($this->route . '.' . $brand, [
+            'route'     => $this->route,
+            'detail'    => $detail,
+            'brand'     => $brand
         ]);
     }
 }
