@@ -47,8 +47,8 @@ class NewsController extends Controller
         $years = $this->repository->years();
         
         $filters = [
-            'year' => isset($params['show_year']) ? $params['show_year'] : 0,
-            'category_id' => isset($params['category_id']) ? $params['category_id'] : 0,
+            'year' => !empty($params['show_year']) ? $params['show_year'] : 0,
+            'category_id' => !empty($params['category_id']) ? $params['category_id'] : 0,
         ];
         
         return view($this->route . '.list', [
