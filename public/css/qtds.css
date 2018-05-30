@@ -209,7 +209,7 @@
     line-height: 40px;
 }
 .user_brand>div{
-    width: 71.8%;
+    width: 71.875%;
     max-width: 1380px;
     margin: 0 auto;
     text-align: center;
@@ -225,27 +225,21 @@
     width: 100%;
     padding: 30px 0;
     position: relative;
+    overflow: hidden;
+    text-align: center;
 }
 .user_brand .userBox .item{
+    display: inline-block;
     width: 219px;
-    max-width: 304px;
+    max-width: 219px;
     height: 304px;
     max-height: 394px;
     border: 1px solid #dddddd;
     float: left;
     overflow: hidden;
     position: relative;
-    margin: 20px 0;
+    margin: 20px 20px;
     border-radius: 10px;
-}
-.user_brand .userBox .item +.item{
-    margin-left:24px ;
-}
-.user_brand .userBox .item:nth-of-type(5){
-    margin-left: 0;
-}
-.user_brand .userBox .item:nth-of-type(9){
-    margin-left: 0;
 }
 .user_brand .userBox .item .title{
     font-size: 30px;
@@ -274,23 +268,23 @@
     width: 80%;
     border-radius: 10px;
 }
-.kdm_user_brand .kdm_user .item{
-    width: 412px;
-    height: 527px;
-}
-.kdm_user_brand .userBox .item:nth-of-type(4){
-    margin-left:0;
-    margin-right: 24px;
-}
-.kdm_user_brand .userBox .item:nth-of-type(7){
-    margin-left: 0;
-}
-.kdm_user_brand .userBox .item:nth-of-type(10){
-    margin-left: 0;
-}
-.kdm_user_brand .userBox .item:nth-of-type(8){
-   margin-right: 24px;
-}
+/*.kdm_user_brand .kdm_user .item{*/
+    /*width: 30%;*/
+    /*max-width: 400px;*/
+/*}*/
+/*.kdm_user_brand .userBox .item:nth-of-type(4){*/
+    /*margin-left:0;*/
+    /*margin-right: 24px;*/
+/*}*/
+/*.kdm_user_brand .userBox .item:nth-of-type(7){*/
+    /*margin-left: 0;*/
+/*}*/
+/*.kdm_user_brand .userBox .item:nth-of-type(10){*/
+    /*margin-left: 0;*/
+/*}*/
+/*.kdm_user_brand .userBox .item:nth-of-type(8){*/
+   /*margin-right: 24px;*/
+/*}*/
 .fabletown_main .joinUs_brand{
     display: none;
 }
@@ -420,7 +414,12 @@
 .joinUs_brand .checkBox a:hover{
     text-decoration: underline;
 }
-@media all and (max-width: 1160px) and (min-width: 448px) {
+@media all and (max-width: 1426px) {
+    .user_brand>div .item{
+       margin:20px 7px !important;
+    }
+}
+    @media all and (max-width: 1160px) and (min-width: 448px) {
     .brand_center{
         padding-top: 50px;
     }
@@ -441,8 +440,8 @@
      }
     .user_brand>div .item{
         width:192px !important;
-        height: 200px !important;
-        margin: 6px !important;
+        height: 220px !important;
+        margin: 10px 20px !important;
     }
     .user_brand  .item .mark .title{
         font-size: 16px;
@@ -482,6 +481,7 @@
     }
 
 }
+
 @media all and (max-width: 447px) and (min-width: 320px){
     .brand_center{
         padding-top: 30px;
@@ -519,9 +519,9 @@
         padding: 0;
     }
     .user_brand>div .item{
-        width:169px !important;
-        height: 200px !important;
-        margin: 6px !important;
+        width:139px !important;
+        height: 180px !important;
+        margin: 6px!important;
     }
     .user_brand  .item .mark .title{
         font-size: 14px;

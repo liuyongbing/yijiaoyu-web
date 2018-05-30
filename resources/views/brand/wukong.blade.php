@@ -46,13 +46,13 @@
         </div>
         <div class="p2">
             <a href="javascript:;">
-                <img src="/imgs/about/ab01.png{{ $STATIC_VERSION }}" alt="50"/>
+                <img src="/imgs/qtds/two01.png{{ $STATIC_VERSION }}" alt="50"/>
             </a>
             <a href="javascript:;">
-                <img src="/imgs/about/ab02.png{{ $STATIC_VERSION }}" alt="240"/>
+                <img src="/imgs/qtds/two02.png{{ $STATIC_VERSION }}" alt="240"/>
             </a>
             <a href="javascript:;">
-                <img src="/imgs/about/ab03.png{{ $STATIC_VERSION }}" alt="1000"/>
+                <img src="/imgs/qtds/two03.png{{ $STATIC_VERSION }}" alt="1000"/>
             </a>
         </div>
         <div class="p3">
