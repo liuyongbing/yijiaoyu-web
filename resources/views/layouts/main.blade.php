@@ -5,6 +5,8 @@
     <meta name="x5-orientation" content="portrait">
     <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
     <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="bookmark" href="/favicon.ico"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
     <meta name="renderer" content="webkit">
     <meta name="description" content="翼教育">
