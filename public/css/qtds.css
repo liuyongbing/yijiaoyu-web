@@ -127,7 +127,8 @@
     margin: 0 auto;
 }
 .kdm_brand .p3 .info img{
-   width: 100%
+    width: 78.5%;
+   max-width: 100%
 }
 .com_brand .p3 .info>p{
      height: 40px;
@@ -185,7 +186,8 @@
     padding: 10px 0;
 }
 .self_brand>div a>img{
-   width: 80%;
+    width: 49%;
+   max-width: 80%;
 }
 .self_brand  .title{
     width: 80%;
@@ -227,6 +229,7 @@
     position: relative;
     overflow: hidden;
     text-align: center;
+    padding-left: 20px;
 }
 .user_brand .userBox .item{
     display: inline-block;
@@ -238,8 +241,9 @@
     float: left;
     overflow: hidden;
     position: relative;
-    margin: 20px 20px;
+    margin: 20px 40px;
     border-radius: 10px;
+    margin-left: 50px;
 }
 .user_brand .userBox .item .title{
     font-size: 30px;
@@ -268,23 +272,6 @@
     width: 80%;
     border-radius: 10px;
 }
-/*.kdm_user_brand .kdm_user .item{*/
-    /*width: 30%;*/
-    /*max-width: 400px;*/
-/*}*/
-/*.kdm_user_brand .userBox .item:nth-of-type(4){*/
-    /*margin-left:0;*/
-    /*margin-right: 24px;*/
-/*}*/
-/*.kdm_user_brand .userBox .item:nth-of-type(7){*/
-    /*margin-left: 0;*/
-/*}*/
-/*.kdm_user_brand .userBox .item:nth-of-type(10){*/
-    /*margin-left: 0;*/
-/*}*/
-/*.kdm_user_brand .userBox .item:nth-of-type(8){*/
-   /*margin-right: 24px;*/
-/*}*/
 .fabletown_main .joinUs_brand{
     display: none;
 }
@@ -296,7 +283,8 @@
     overflow: hidden;
 }
 .fabletown_main  img{
-    width: 85%;
+    width: 50%;
+    max-width: 949px;
 }
 .fabletown_main .joinUs_brand .p2{
     width: 100%;
@@ -414,12 +402,21 @@
 .joinUs_brand .checkBox a:hover{
     text-decoration: underline;
 }
-@media all and (max-width: 1426px) {
+@media all and (max-width: 1730px) {
+    .user_brand>div .item{
+        margin:20px 25px !important;
+    }
+}
+@media all and (max-width: 1508px) {
     .user_brand>div .item{
        margin:20px 7px !important;
     }
 }
-    @media all and (max-width: 1160px) and (min-width: 448px) {
+@media all and (max-width: 1160px) and (min-width: 448px) {
+    .fabletown_main  img{
+        width: 85%;
+        max-width: 85%;
+    }
     .brand_center{
         padding-top: 50px;
     }
@@ -442,6 +439,12 @@
         width:192px !important;
         height: 220px !important;
         margin: 10px 20px !important;
+        -webkit-display: flex;
+        -webkit-flex-flow: row wrap;
+        -webkit-justify-content: space-between;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
     }
     .user_brand  .item .mark .title{
         font-size: 16px;
@@ -486,24 +489,45 @@
     .brand_center{
         padding-top: 30px;
     }
+    .com_brand img{
+        width: 60%;
+    }
+    .com_brand .info{
+        padding-top: 20px;
+    }
+    .com_brand .p2{
+        padding: 0;
+    }
+    .self_brand .title .icon{
+        width: 48px;
+        background-size: 50%;
+    }
+    .com_brand .p1 {
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+    .fabletown_main  img{
+        width: 85%;
+        max-width: 85%;
+    }
     .fixedNav{
         width: 100%;
         height: 40px !important;
         line-height: 40px !important;
     }
     .user_brand>div>.title,.com_brand .title,.self_brand>div>.title{
-        font-size: 14px;
+        font-size: 14px !important;
         background-image: none;
         height: auto;
-        padding-bottom: 10px;
+        padding-bottom: 10px !important;
     }
     .self_brand>div>.title p{
-        font-size: 12px;
+        font-size: 12px !important;
     }
     .kdm_brand .p3 .title{
-        height: 100px;
-        line-height: 100px;
-        font-size: 16px;
+        height: 100px !important;
+        line-height: 100px !important;
+        font-size: 16px !important;
     }
     .brand_center .title_tab>a{
         font-size: 14px;
@@ -517,6 +541,12 @@
     }
     .user_brand .userBox{
         padding: 0;
+        -webkit-display: flex;
+        -webkit-flex-flow: row wrap;
+        -webkit-justify-content: space-between;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
     }
     .user_brand>div .item{
         width:139px !important;
