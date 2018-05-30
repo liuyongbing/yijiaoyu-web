@@ -177,7 +177,7 @@
                         <img src="/imgs/kdm/person01/08.jpg{{ $STATIC_VERSION }}" alt="付清雯"/>
                         <div class="mark">
                             <h3 class="title">付清雯</h3>
-                            <p class="info">拉丁舞技术总监</p>
+                            <p class="info">区域馆长</p>
                         </div>
                     </a>
                 </li>
