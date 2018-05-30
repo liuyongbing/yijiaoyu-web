@@ -12,7 +12,7 @@
     <section class="banner swiper-container">
         <ul class="bannerUl swiper-wrapper">
             <li class="item swiper-slide">
-                <img src="/imgs/banners/banner_wukong.jpg" alt="01">
+                <img src="/imgs/banners/banner_wukong.jpg{{ $STATIC_VERSION }}" alt="01">
             </li>
         </ul>
         <div class="swiper-pagination banner_slider"></div>
@@ -31,7 +31,7 @@
     </section>
     <section class="com_brand main_brand" >
         <div class="p1">
-            <img src="/imgs/logo/logo.png" alt="齐天大圣" class="logo"/>
+            <img src="/imgs/logo/logo.png{{ $STATIC_VERSION }}" alt="齐天大圣" class="logo"/>
             <p class="info">
                 每个孩子都是天真无邪，活泼可爱；<br/>
                 调皮、贪玩、撒泼、不羁，<br/>
@@ -46,13 +46,13 @@
         </div>
         <div class="p2">
             <a href="javascript:;">
-                <img src="/imgs/about/ab01.png" alt="50"/>
+                <img src="/imgs/about/ab01.png{{ $STATIC_VERSION }}" alt="50"/>
             </a>
             <a href="javascript:;">
-                <img src="/imgs/about/ab02.png" alt="240"/>
+                <img src="/imgs/about/ab02.png{{ $STATIC_VERSION }}" alt="240"/>
             </a>
             <a href="javascript:;">
-                <img src="/imgs/about/ab03.png" alt="1000"/>
+                <img src="/imgs/about/ab03.png{{ $STATIC_VERSION }}" alt="1000"/>
             </a>
         </div>
         <div class="p3">
@@ -102,39 +102,39 @@
         </div>
         </div>
         <div class="p4">
-            <img src="/imgs/qtds/fzlc.png" alt="发展历程"/>
+            <img src="/imgs/qtds/fzlc.png{{ $STATIC_VERSION }}" alt="发展历程"/>
         </div>
         <div class="p5">
             <h3 class="title">荣誉证书</h3>
-            <img src="/imgs/qtds/ry01.jpg" alt="荣誉01"/>
-            <img src="/imgs/qtds/ry02.jpg" alt="荣誉02"/>
-            <img src="/imgs/qtds/ry03.jpg" alt="荣誉03"/>
+            <img src="/imgs/qtds/ry01.jpg{{ $STATIC_VERSION }}" alt="荣誉01"/>
+            <img src="/imgs/qtds/ry02.jpg{{ $STATIC_VERSION }}" alt="荣誉02"/>
+            <img src="/imgs/qtds/ry03.jpg{{ $STATIC_VERSION }}" alt="荣誉03"/>
         </div>
     </section>
     <section class="self_brand main_brand">
         <div class="p1">
             <h3 class="title"><span class="icon"></span>体智能跆拳道—能力篇 <p>25项综合核心能力</p></h3>
             <a href="javascript:;">
-            <img src="/imgs/qtds/nl.jpg" alt="nl"/>
+            <img src="/imgs/qtds/nl.jpg{{ $STATIC_VERSION }}" alt="nl"/>
                 <p class="info"><span class="age">3—12</span>岁为各项能力发展<span class="time">黄金时期</span></p>
             </a>
         </div>
         <div class="p2">
             <h3 class="title"><span class="icon"></span>体智能跆拳道—品行VS技术篇 <p>青少年儿童身心能健康专家</p></h3>
             <a href="javascript:;">
-            <img src="/imgs/qtds/class.png" alt="class"/>
+            <img src="/imgs/qtds/class.png{{ $STATIC_VERSION }}" alt="class"/>
             </a>
         </div>
         <div class="p3">
             <h3 class="title"><span class="icon"></span>体智能跆拳道—运动营养篇 <p>跆拳道运动营养对应目标</p></h3>
             <a href="javascript:;">
-            <img src="/imgs/qtds/ll.png" alt="ll"/>
+            <img src="/imgs/qtds/ll.png{{ $STATIC_VERSION }}" alt="ll"/>
             </a>
         </div>
         <div class="p4">
             <h3 class="title"><span class="icon"></span>体智能跆拳道立体全方位教学体系 <p>青少年儿童身心能健康专家</p></h3>
             <a href="javascript:;">
-            <img src="/imgs/qtds/table.jpg" alt="table"/>
+            <img src="/imgs/qtds/table.jpg{{ $STATIC_VERSION }}" alt="table"/>
             </a>
         </div>
     </section>
@@ -144,7 +144,7 @@
             <ul class="userBox">
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person01/01.jpg" alt="杨帆"/>
+                        <img src="/imgs/qtds/person01/01.jpg{{ $STATIC_VERSION }}" alt="杨帆"/>
                         <div class="mark">
                             <h3 class="title">杨帆</h3>
                             <p class="info">总执行助理︱齐天大圣总经办</p>
@@ -153,7 +153,7 @@
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person01/02.jpg" alt="詹超鹏"/>
+                        <img src="/imgs/qtds/person01/02.jpg{{ $STATIC_VERSION }}" alt="詹超鹏"/>
                         <div class="mark">
                             <h3 class="title">詹超鹏</h3>
                             <p class="info">经理︱齐天大圣总经办</p>
@@ -161,7 +161,7 @@
                     </a>
                 </li>   <li class="item">
                 <a href="javascript:;">
-                    <img src="/imgs/qtds/person01/03.jpg" alt="赵春桥"/>
+                    <img src="/imgs/qtds/person01/03.jpg{{ $STATIC_VERSION }}" alt="赵春桥"/>
                     <div class="mark">
                         <h3 class="title">赵春桥</h3>
                         <p class="info">总教练︱齐天大圣总经办</p>
@@ -169,7 +169,7 @@
                 </a>
             </li>   <li class="item">
                 <a href="javascript:;">
-                    <img src="/imgs/qtds/person01/04.jpg" alt="熊梅娥"/>
+                    <img src="/imgs/qtds/person01/04.jpg{{ $STATIC_VERSION }}" alt="熊梅娥"/>
                     <div class="mark">
                         <h3 class="title">熊梅娥</h3>
                         <p class="info">客服总监︱齐天大圣总经办</p>
@@ -177,7 +177,7 @@
                 </a>
             </li>   <li class="item">
                 <a href="javascript:;">
-                    <img src="/imgs/qtds/person01/05.jpg" alt="陶慰"/>
+                    <img src="/imgs/qtds/person01/05.jpg{{ $STATIC_VERSION }}" alt="陶慰"/>
                     <div class="mark">
                         <h3 class="title">陶慰</h3>
                         <p class="info">教研员︱齐天大圣总经办</p>
@@ -185,7 +185,7 @@
                 </a>
             </li>   <li class="item">
                 <a href="javascript:;">
-                    <img src="/imgs/qtds/person01/06.jpg" alt="丁力"/>
+                    <img src="/imgs/qtds/person01/06.jpg{{ $STATIC_VERSION }}" alt="丁力"/>
                     <div class="mark">
                         <h3 class="title">丁力</h3>
                         <p class="info">区域馆长</p>
@@ -193,7 +193,7 @@
                 </a>
             </li>   <li class="item">
                 <a href="javascript:;">
-                    <img src="/imgs/qtds/person01/07.jpg" alt="贾诗涵"/>
+                    <img src="/imgs/qtds/person01/07.jpg{{ $STATIC_VERSION }}" alt="贾诗涵"/>
                     <div class="mark">
                         <h3 class="title">贾诗涵</h3>
                         <p class="info">区域馆长</p>
@@ -202,7 +202,7 @@
             </li>
                 <li class="item">
                 <a href="javascript:;">
-                    <img src="/imgs/qtds/person01/08.jpg" alt="肖烈斯"/>
+                    <img src="/imgs/qtds/person01/08.jpg{{ $STATIC_VERSION }}" alt="肖烈斯"/>
                     <div class="mark">
                         <h3 class="title">肖烈斯</h3>
                         <p class="info">区域馆长</p>
@@ -211,7 +211,7 @@
             </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person01/09.jpg" alt="骆心"/>
+                        <img src="/imgs/qtds/person01/09.jpg{{ $STATIC_VERSION }}" alt="骆心"/>
                         <div class="mark">
                             <h3 class="title">骆心</h3>
                             <p class="info">区域馆长</p>
@@ -220,7 +220,7 @@
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person01/10.jpg" alt="万江山"/>
+                        <img src="/imgs/qtds/person01/10.jpg{{ $STATIC_VERSION }}" alt="万江山"/>
                         <div class="mark">
                             <h3 class="title">万江山</h3>
                             <p class="info">区域馆长</p>
@@ -229,7 +229,7 @@
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person01/11.jpg" alt="姚志冲"/>
+                        <img src="/imgs/qtds/person01/11.jpg{{ $STATIC_VERSION }}" alt="姚志冲"/>
                         <div class="mark">
                             <h3 class="title">姚志聪</h3>
                             <p class="info">区域馆长</p>
@@ -243,7 +243,7 @@
             <ul class="userBox">
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/01.jpg" alt="杨帆"/>
+                        <img src="/imgs/qtds/person02/01.jpg{{ $STATIC_VERSION }}" alt="杨帆"/>
                         <div class="mark">
                             <h3 class="title">杨帆</h3>
                         </div>
@@ -251,7 +251,7 @@
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/02.jpg" alt="詹超鹏"/>
+                        <img src="/imgs/qtds/person02/02.jpg{{ $STATIC_VERSION }}" alt="詹超鹏"/>
                         <div class="mark">
                             <h3 class="title">詹超鹏</h3>
                         </div>
@@ -259,7 +259,7 @@
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/03.jpg" alt="赵春桥"/>
+                        <img src="/imgs/qtds/person02/03.jpg{{ $STATIC_VERSION }}" alt="赵春桥"/>
                         <div class="mark">
                             <h3 class="title">赵春桥</h3>
                         </div>
@@ -267,7 +267,7 @@
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/04.jpg" alt="肖宇"/>
+                        <img src="/imgs/qtds/person02/04.jpg{{ $STATIC_VERSION }}" alt="肖宇"/>
                         <div class="mark">
                             <h3 class="title">肖宇</h3>
                         </div>
@@ -275,7 +275,7 @@
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/05.jpg" alt="刘南山"/>
+                        <img src="/imgs/qtds/person02/05.jpg{{ $STATIC_VERSION }}" alt="刘南山"/>
                         <div class="mark">
                             <h3 class="title">刘南山</h3>
                         </div>
@@ -283,7 +283,7 @@
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/06.jpg" alt="陈孟龙"/>
+                        <img src="/imgs/qtds/person02/06.jpg{{ $STATIC_VERSION }}" alt="陈孟龙"/>
                         <div class="mark">
                             <h3 class="title">陈孟龙</h3>
                         </div>
@@ -291,7 +291,7 @@
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/07.jpg" alt="唐宇"/>
+                        <img src="/imgs/qtds/person02/07.jpg{{ $STATIC_VERSION }}" alt="唐宇"/>
                         <div class="mark">
                             <h3 class="title">唐宇</h3>
                         </div>
@@ -299,7 +299,7 @@
                 </li>
                 <li class="item">
                     <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/08.jpg" alt="胡兴泰"/>
+                        <img src="/imgs/qtds/person02/08.jpg{{ $STATIC_VERSION }}" alt="胡兴泰"/>
                         <div class="mark">
                             <h3 class="title">胡兴泰</h3>
                         </div>
@@ -309,7 +309,7 @@
         </div>
         <div class="p3">
             <h3 class="title">客服团队</h3>
-            <img src="/imgs/qtds/kefu.jpg" alt="客服"/>
+            <img src="/imgs/qtds/kefu.jpg{{ $STATIC_VERSION }}" alt="客服"/>
         </div>
     </section>
 </article>>
