@@ -12,7 +12,7 @@
     <section class="banner swiper-container">
         <ul class="bannerUl swiper-wrapper">
             <li class="item swiper-slide">
-                <img src="/imgs/fabletwon/banner.jpg{{ $STATIC_VERSION }}" alt="01">
+                <img src="/imgs/banners/banner_town.jpg{{ $STATIC_VERSION }}" alt="01">
             </li>
         </ul>
         <div class="swiper-pagination banner_slider"></div>
