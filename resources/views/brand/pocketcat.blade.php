@@ -94,7 +94,7 @@
         <div class="p2">
             <h3 class="title"><span class="icon"></span>体适能舞蹈—技术篇</h3>
             <a href="javascript:;">
-                <img src="/imgs/kdm/px02.png{{ $STATIC_VERSION }}" alt="class"/>
+                <img src="/imgs/kdm/px02.jpg{{ $STATIC_VERSION }}" alt="class"/>
             </a>
             <img src="/imgs/kdm/ztp02.jpg{{ $STATIC_VERSION }}" alt="zt"/>
         </div>
