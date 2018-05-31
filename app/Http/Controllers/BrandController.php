@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Repositories\ApplyRepository;
 
 class BrandController extends Controller
 {
@@ -56,5 +57,14 @@ class BrandController extends Controller
             'detail'    => $detail,
             'brand'     => $brand
         ]);
+    }
+    
+    /**
+     * 加盟申请
+     */
+    public function apply(Request $request)
+    {
+        $repository = new ApplyRepository();
+        $repository->store();
     }
 }
