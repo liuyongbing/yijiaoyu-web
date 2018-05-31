@@ -49,7 +49,7 @@
                 <img src="/imgs/qtds/two01.png{{ $STATIC_VERSION }}" alt="50"/>
             </a>
             <a href="javascript:;">
-                <img src="/imgs/qtds/two02.png{{ $STATIC_VERSION }}" alt="240"/>
+                <img src="/imgs/qtds/two02.jpg{{ $STATIC_VERSION }}" alt="240"/>
             </a>
             <a href="javascript:;">
                 <img src="/imgs/qtds/two03.png{{ $STATIC_VERSION }}" alt="1000"/>
