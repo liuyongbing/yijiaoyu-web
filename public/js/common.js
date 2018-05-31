@@ -2,19 +2,20 @@
  * Created by Administrator on 2018/5/13.
  */
 
+var sliderSpeed = 3000;
 function sliderShow(){
-  $("#slider>.item").hover(function(){
-      $(this).children(".itemUl").slideDown(300);
-  },function(){
-      $(this).children(".itemUl").slideUp(300);
-  })
-
+    $("#slider>.item").hover(function(){
+        $(this).children(".itemUl").slideDown(sliderSpeed);
+    },function(){
+        $(this).children(".itemUl").slideUp(sliderSpeed);
+    })
 }
 function bannerScroll(){
     if($(".banner ul li").length>1){
         $(".banner_slider,.banner>.icon").show();
         new Swiper('.banner', {
             autoplay: 3000,
+            speed: sliderSpeed,
             pagination: '.banner_slider',
             prevButton: '.icon-prev',
             nextButton: '.icon-next'
