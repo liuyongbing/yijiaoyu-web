@@ -9,7 +9,7 @@
 @section('content')
 <article class="main bossMain">
     
-    @include('include.banner')
+    {!! \App\Helpers\WidgetHelper::banner('about') !!}
     
     <!-- 刘洋 -->
     <section class="boss bo_ly">

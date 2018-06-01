@@ -8,18 +8,9 @@
 
 @section('content')
 <article class="main">
-    <!--banner-->
-    <section class="banner swiper-container">
-        <ul class="bannerUl swiper-wrapper">
-            <li class="item swiper-slide">
-                <img src="/imgs/banners/banner_pocketcat.jpg{{ $STATIC_VERSION }}" alt="01">
-            </li>
-        </ul>
-        <div class="swiper-pagination banner_slider"></div>
-        <div class=" icon-prev icon">  </div>
-        <div class=" icon-next icon">  </div>
-    </section>
-    <!--banner End-->
+    
+    {!! \App\Helpers\WidgetHelper::banner('pcketcat') !!}
+    
     <!-- -->
     <section class="brand_center kdm_center" id="brands_tab">
         <div class="title_tab">
