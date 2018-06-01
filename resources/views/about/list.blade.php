@@ -14,13 +14,13 @@
     <!-- bannerBottom -->
     <section class="ab_BannerBottom" id="group_introduction">
         <a href="javascript:;">
-        <img src="imgs/about/ab01.png{{ $STATIC_VERSION }}" alt="50"/>
+        <img src="imgs/about/ab01.jpg{{ $STATIC_VERSION }}" alt=""/>
         </a>
         <a href="javascript:;">
-        <img src="imgs/about/ab02.png{{ $STATIC_VERSION }}" alt="240"/>
+        <img src="imgs/about/ab02.jpg{{ $STATIC_VERSION }}" alt=""/>
         </a>
         <a href="javascript:;">
-        <img src="imgs/about/ab03.png{{ $STATIC_VERSION }}" alt="1000"/>
+        <img src="imgs/about/ab03.jpg{{ $STATIC_VERSION }}" alt=""/>
         </a>
     </section>
     <!-- bannerBottom End-->
@@ -58,7 +58,7 @@
         </h3>
         <div class="brandImgs">
             <a href="javascript:;">
-                <img src="imgs/about/brand_culture.png{{ $STATIC_VERSION }}" alt="mid"/>
+                <img src="imgs/about/brand_culture.jpg{{ $STATIC_VERSION }}" alt="品牌文化"/>
             </a>
         </div>
     </section>
