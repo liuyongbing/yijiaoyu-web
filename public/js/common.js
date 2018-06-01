@@ -2,12 +2,11 @@
  * Created by Administrator on 2018/5/13.
  */
 
-var sliderSpeed = 3000;
 function sliderShow(){
     $("#slider>.item").hover(function(){
-        $(this).children(".itemUl").slideDown(sliderSpeed);
+        $(this).children(".itemUl").slideDown(300);
     },function(){
-        $(this).children(".itemUl").slideUp(sliderSpeed);
+        $(this).children(".itemUl").slideUp(300);
     })
 }
 function bannerScroll(){
@@ -15,7 +14,7 @@ function bannerScroll(){
         $(".banner_slider,.banner>.icon").show();
         new Swiper('.banner', {
             autoplay: 3000,
-            speed: sliderSpeed,
+            speed: 3000,
             pagination: '.banner_slider',
             prevButton: '.icon-prev',
             nextButton: '.icon-next'
