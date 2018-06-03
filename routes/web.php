@@ -16,6 +16,8 @@ Route::get('/', function () {
 });
 //About:关于我们
 Route::resource('about', 'AboutController');
+//Apply:加盟申请
+Route::resource('apply', 'ApplyController');
 //Brand:品牌
 Route::get('brand/pocketcat', 'BrandController@pocketcat')->name('brand.pocketcat');
 Route::get('brand/town', 'BrandController@town')->name('brand.town');

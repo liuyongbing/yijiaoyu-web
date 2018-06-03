@@ -79,253 +79,107 @@
         </div>
     </section>
     <section class="user_brand main_brand">
-        <div class="p1">
-            <h3 class="title">管理团队</h3>
-            <ul class="userBox">
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person01/01.jpg{{ $STATIC_VERSION }}" alt="王友源"/>
-                        <div class="mark">
-                            <h3 class="title">王友源</h3>
-                            <p class="info">集团总经理︱童画镇总经办︱集团部门经理</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person01/02.jpg{{ $STATIC_VERSION }}" alt="罗雨"/>
-                        <div class="mark">
-                            <h3 class="title">罗雨</h3>
-                            <p class="info">集团总经理︱童画镇总经办</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person01/03.jpg{{ $STATIC_VERSION }}" alt="李梦竹"/>
-                        <div class="mark">
-                            <h3 class="title">李梦竹</h3>
-                            <p class="info">童画镇总经办</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person01/04.jpg{{ $STATIC_VERSION }}" alt="李程遥"/>
-                        <div class="mark">
-                            <h3 class="title">李程遥</h3>
-                            <p class="info">童画镇总经办</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person01/05.jpg{{ $STATIC_VERSION }}" alt="王鑫鑫"/>
-                        <div class="mark">
-                            <h3 class="title">王鑫鑫</h3>
-                            <p class="info">五一广场馆馆长</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person01/06.jpg{{ $STATIC_VERSION }}" alt="鄢志葳"/>
-                        <div class="mark">
-                            <h3 class="title">鄢志葳</h3>
-                            <p class="info">运河佳苑馆馆长︱艺彩330馆长</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person01/07.jpg{{ $STATIC_VERSION }}" alt="龚大成"/>
-                        <div class="mark">
-                            <h3 class="title">龚大成</h3>
-                            <p class="info">中南路峰景馆馆长</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="p2">
-            <h3 class="title">教练团队</h3>
-            <ul class="userBox">
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person02/01.jpg{{ $STATIC_VERSION }}" alt="余君"/>
-                        <div class="mark">
-                            <h3 class="title">余君</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person02/02.jpg{{ $STATIC_VERSION }}" alt="何莉"/>
-                        <div class="mark">
-                            <h3 class="title">何莉</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person02/03.jpg{{ $STATIC_VERSION }}" alt="黄陆路"/>
-                        <div class="mark">
-                            <h3 class="title">黄陆路</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person02/04.jpg{{ $STATIC_VERSION }}" alt="邢茹月"/>
-                        <div class="mark">
-                            <h3 class="title">邢茹月</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person02/05.jpg{{ $STATIC_VERSION }}" alt="龚建霞"/>
-                        <div class="mark">
-                            <h3 class="title">龚建霞</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person02/06.jpg{{ $STATIC_VERSION }}" alt="张俭"/>
-                        <div class="mark">
-                            <h3 class="title">张俭</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person02/07.jpg{{ $STATIC_VERSION }}" alt="宋宝杏"/>
-                        <div class="mark">
-                            <h3 class="title">宋宝杏</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person02/08.jpg{{ $STATIC_VERSION }}" alt="余南洁"/>
-                        <div class="mark">
-                            <h3 class="title">余南洁</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person02/09.jpg{{ $STATIC_VERSION }}" alt="龚欢欢"/>
-                        <div class="mark">
-                            <h3 class="title">龚欢欢</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person02/10.jpg{{ $STATIC_VERSION }}" alt="吴爽"/>
-                        <div class="mark">
-                            <h3 class="title">吴爽</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person02/11.jpg{{ $STATIC_VERSION }}" alt="艾芷珂"/>
-                        <div class="mark">
-                            <h3 class="title">艾芷珂</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/fabletwon/person02/12.jpg{{ $STATIC_VERSION }}" alt="毛敬仪"/>
-                        <div class="mark">
-                            <h3 class="title">毛敬仪</h3>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        @include('brand.include.town_managers')
+        @include('brand.include.town_teachers')
         <div class="p3 clear">
             <!--h3 class="title">客服团队</h3>
             <img src="/imgs/qtds/kefu.jpg{{ $STATIC_VERSION }}" alt="客服"/-->
         </div>
     </section>
-    <section class="joinUs_brand  main_brand">
-         <div class="p1">
-             <img src="/imgs/fabletwon/p1.jpg{{ $STATIC_VERSION }}" alt="01"/>
-         </div>
-        <div class="p2">
-            <div class="imgbox">
-            <img src="/imgs/fabletwon/p3.png{{ $STATIC_VERSION }}" alt="02"/>
-            </div>
-        </div>
-        <div class="joinus_from">
-            <h3 class="top">
-                <a href="javascript:;">留言咨询 <span class="icon"></span></a>
-                <a href="javascript:;">0717-6232880</a>
-                <span>如果你对此项目感兴趣，请留言，获取更多的加盟资料！</span>
-            </h3>
-            <div class="formBox">
-          <div class="left fl">
-              <dl class="arrowClass">
-                    <dd>留言咨询</dd>
-                    <dd>等待回访</dd>
-                    <dd>签约合作</dd>
-              </dl>
-          </div>
-            <div class="right fr">
-                <div class="input_group">
-                <div class="input_box">
-                    <label>姓名:</label>
-                    <input type="text" placeholder="真实姓名"/>
-                </div>
-                <div class="input_box">
-                    <label>手机:</label>
-                    <input type="tel" placeholder="请填写手机号"/>
-                </div>
-                <div class="input_box">
-                    <label>预算:</label>
-                    <select>
-                        <option>请选择投资额</option>
-                        <option>50-100万</option>
-                        <option>110-200万</option>
-                        <option>210-300万</option>
-                        <option>300万以上</option>
-                    </select>
-                </div>
-                <div class="input_box address">
-                    <label>地区:</label>
-                    <select>
-                        <option value="">省/市</option>
-                    </select>
-                    <select>
-                        <option value="">地/州</option>
-                    </select>
-                    <select>
-                        <option value="">区县</option>
-                    </select>
-                    <input type="text" placeholder="请输入完整信息">
-                </div>
-                <div class="input_box">
-                    <label>内容:</label>
-                   <textarea></textarea>
-                </div>
-               <div class="input_box checkBox">
-                   <input type="checkbox"/>
-                   <span>我已阅读并同意 <a href="javascript:;"> 《全球加盟网络服务条款》 </a> </span>
-               </div>
-                <button type="button" class="submit">提交留言</button>
-            </div>
-            </div>
-        </div>
-        </div>
-    </section>
+    @include('brand.include.town_apply')
 </article>
 @endsection
 
 @section('script')
 <script src="{{ asset(elixir('js/brands.js')) }}{{ $STATIC_VERSION }}"></script>
+<script type="text/javascript">
+$(function() {
+    $('#btn_apply').click(function() {
+        var brand_id = $('#brand_id').val();
+        //姓名
+        var username = $('#username').val();
+        if (!username) {
+            alert('请填写姓名');
+            return false;
+        }
+        //手机
+        var mobile = $('#mobile').val();
+        if (!mobile) {
+            alert('请输入手机号');
+            return false;
+        }
+        var rexMobile = /^1[3-9][0-9]\d{8}$/;
+        if (!rexMobile.test(mobile)) {
+            alert('请输入11位手机号');
+            return false;
+        }
+        //预算
+        var budget_range = $('#budget_range').val();
+        if (!budget_range) {
+            alert('请选择预算');
+            return false;
+        }
+        //省份
+        var province = $('#province').val();
+        if (!province) {
+            alert('请选择省份');
+            return false;
+        }
+        //城市
+        var city = $('#city').val();
+        if (!city) {
+            alert('请选择城市');
+            return false;
+        }
+        //区县
+        var area = $('#area').val();
+        if (!area) {
+            alert('请选择区县');
+            return false;
+        }
+        //街道地址
+        var address = $('#address').val();
+        if (!address) {
+            alert('请填写街道地址');
+            return false;
+        }
+        //内容
+        var summary = $('#summary').val();
+        if (!summary) {
+            alert('请填写内容');
+            return false;
+        }
+        
+        $.ajax({
+            method: "POST",
+            url: "{{ route('apply.store') }}",
+            data: { 
+                '_token' : '{{ csrf_token() }}',
+                'Apply[brand_id]' : brand_id,
+                'Apply[username]' : username,
+                'Apply[mobile]' : mobile,
+                'Apply[budget_range]' : budget_range,
+                'Apply[province]' : province,
+                'Apply[city]' : city,
+                'Apply[area]' : area,
+                'Apply[address]' : address,
+                'Apply[summary]' : summary
+            },
+            dataType: 'json',
+            success: function(response) {
+                if (response.status != 'success') {
+                    alert(response.message);
+                    return false;
+                }
+                
+                alert(response.message);
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown)
+            {
+                alert('服务器错误');
+            }
+        })
+    });
+});
+</script>
 @endsection
