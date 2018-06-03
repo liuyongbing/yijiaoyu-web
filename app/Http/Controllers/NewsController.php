@@ -39,7 +39,11 @@ class NewsController extends Controller
         }
         $params['status'] = 1;
         
-        $results = $this->repository->list($params, $page, $size);
+        $orderBy = [
+            'id' => 'desc',
+        ];
+        
+        $results = $this->repository->list($params, $page, $size, $orderBy);
         
         $repository = new CategoriesRepository();
         $categories = $repository->all();
