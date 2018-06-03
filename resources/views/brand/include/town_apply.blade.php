@@ -67,11 +67,10 @@
                             <textarea name="summary" id="summary"></textarea>
                         </div>
                         <div class="input_box checkBox">
-                            <input name="agreement" id="agreement" type="checkbox"/>
+                            <input name="agreement" id="agreement" type="checkbox" />
                             <span>我已阅读并同意 <a href="javascript:;"> 《全球加盟网络服务条款》 </a> </span>
                         </div>
                         <button id="btn_apply" type="button" class="submit">提交留言</button>
-                        <!--button id="btn_apply" type="submit" class="submit">提交留言</button-->
                     </div>
                     </form>
                 </div>

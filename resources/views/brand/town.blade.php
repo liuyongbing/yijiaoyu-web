@@ -95,7 +95,9 @@
 <script type="text/javascript">
 $(function() {
     $('#btn_apply').click(function() {
+        
         var brand_id = $('#brand_id').val();
+        
         //姓名
         var username = $('#username').val();
         if (!username) {
@@ -149,6 +151,11 @@ $(function() {
             alert('请填写内容');
             return false;
         }
+        //服务条款
+        if(!$('#agreement').is(':checked')) {
+            alert('您还尚未同意相关服务条款.');
+            return false;
+        }
         
         $.ajax({
             method: "POST",
@@ -167,12 +174,13 @@ $(function() {
             },
             dataType: 'json',
             success: function(response) {
-                if (response.status != 'success') {
+                if ('undefinded' != typeof(response.status) && response.status != 'success') {
                     alert(response.message);
                     return false;
                 }
                 
-                alert(response.message);
+                alert('留言成功, 非常感谢!');
+                $('#btn_apply').attr('disabled', true);
             },
             error: function (XMLHttpRequest, textStatus, errorThrown)
             {

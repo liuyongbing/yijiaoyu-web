@@ -24,6 +24,13 @@ class ApplyController extends Controller
         $data = $request->input('Apply');
         
         $response = $this->repository->store($data);
+        
+        if (!empty($response['id']))
+        {
+            $response = [
+                'status' => 'success'
+            ];
+        }
         return $response;
     }
 }
