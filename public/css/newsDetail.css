@@ -25,6 +25,9 @@
     font-weight: bold;
 }
 
+.detail_content .newsCenter .news_detail {
+    margin-top: 20px;
+}
 .detail_content .newsCenter .news_detail p{
     text-indent: 2em;
     text-align: left;
