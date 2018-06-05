@@ -12,7 +12,7 @@ trait Member
         $brandId = isset($brandValues[$brand]) ? $brandValues[$brand] : '';
         
         $teamTypes = Dictionary::$teamTypesValues;
-        $teamType = isset($teamTypes[$brand]) ? $teamTypes[$brand] : '';
+        $teamType = isset($teamTypes[$teamType]) ? $teamTypes[$teamType] : '';
         
         $params = [
             'status' => 1
@@ -27,13 +27,16 @@ trait Member
         }
         
         $repository = new MembersRepository();
-        $results = $repository->list($params, 1, 7, 'sort');
+        $results = $repository->list($params, 1, Dictionary::PAGE_SIZE_7, 'sort');
         
         $total = isset($results['total']) ? $results['total'] : 0;
         $loadMore = Dictionary::PAGE_SIZE_7 < $total ? true: false;
         
         return view('widgets.member', [
             'members' => isset($results['list']) ? $results['list'] : [],
+            'brandId' => $brandId,
+            'teamType' => $teamType,
+            'pageSize' => Dictionary::PAGE_SIZE_7 + 1,
             'loadMore' => $loadMore
         ]);
     }

@@ -22,20 +22,37 @@ class MembersController extends Controller
      */
     public function index(Request $request)
     {
+        $brandId = $request->input('brand_id', '');
+        $teamType = $request->input('team_type', '');
         $page = $request->input('page', 1);
-        $size = Dictionary::PAGE_SIZE;
+        $size = $request->input('page_size', Dictionary::PAGE_SIZE_7);
         
-        $params = [];
+        $params = ['status' => 1];
+        if (!empty($brandId))
+        {
+            $params['brand_id'] = $brandId;
+        }
+        if (!empty($teamType))
+        {
+            $params['team_type'] = $teamType;
+        }
+        
         $orderBy = [
-            'brand_id' => 'asc',
-            'team_type' => 'asc',
             'sort' => 'asc',
         ];
         $results = $this->repository->list($params, $page, $size, $orderBy);
-return $results;
+        
+        $total = isset($results['total']) ? $results['total'] : 0;
+        $loadMore = ($size * $page) < $total ? true: false;
+        
+        $response = [
+            'items' => isset($results['list']) ? $results['list'] : [],
+            'loadmore' => $loadMore
+        ];
+        
+        return $response;
         return view($this->route . '.list', [
             'route' => $this->route,
-            'items' => isset($results['list']) ? $results['list'] : [],
             'filters' => [],
             'pagination' => [
                 'route' => $this->route . '.index',

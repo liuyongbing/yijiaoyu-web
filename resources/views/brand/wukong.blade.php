@@ -247,9 +247,5 @@
             <img src="/imgs/qtds/kefu.jpg{{ $STATIC_VERSION }}" alt="客服"/>
         </div>
     </section>
-</article>>
-@endsection
-
-@section('script')
-<script src="{{ asset(elixir('js/brands.js')) }}{{ $STATIC_VERSION }}"></script>
+</article>
 @endsection
