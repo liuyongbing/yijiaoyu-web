@@ -14,10 +14,11 @@
     <section class="searchBox">
         <div class="yearSelect">
             <div class="inputBox">
-                <input type="text" name="year" placeholder="年份" value="{{ !empty($filters['year']) ? $filters['year'] : '' }}"  data-id="{{ !empty($filters['year']) ? $filters['year'] : '' }}" readonly />
+                <input type="text" name="year" placeholder="年份" value="{{ !empty($filters['year']) ? $filters['year'] . '年' : '' }}"  data-id="{{ !empty($filters['year']) ? $filters['year'] : '' }}" readonly />
                 <span class="icon icon_bottom"></span>
             </div>
             <ul class="selectList">
+                <li class="item"><a href="javascript:;" data-id="">全部</a></li>
                 @foreach($years as $year)
                 <li class="item"><a href="javascript:;" data-id="{{ $year }}">{{ $year }}年</a></li>
                 @endforeach
@@ -29,6 +30,7 @@
                 <span class="icon icon_bottom"></span>
             </div>
             <ul class="selectList">
+                <li class="item"><a href="javascript:;" data-id="">全部</a></li>
             @foreach($categories as $cate)
                 <li class="item"><a href="javascript:;" data-id="{{ $cate['id'] }}">{{ $cate['title'] }}</a></li>
             @endforeach

@@ -31,7 +31,7 @@ class NewsController extends Controller
         $params = [];
         if (!empty($year))
         {
-            $params['show_year'] = $year;
+            $params['year'] = $year;
         }
         if (!empty($categoryId))
         {
@@ -51,7 +51,7 @@ class NewsController extends Controller
         $years = $this->repository->years();
         
         $filters = [
-            'year' => !empty($params['show_year']) ? $params['show_year'] : 0,
+            'year' => !empty($params['year']) ? $params['year'] : 0,
             'category_id' => !empty($params['category_id']) ? $params['category_id'] : 0,
         ];
         
