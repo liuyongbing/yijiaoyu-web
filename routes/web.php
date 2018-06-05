@@ -25,5 +25,7 @@ Route::resource('brand', 'BrandController');
 Route::resource('founder', 'FounderController');
 //Home:首页
 Route::resource('home', 'HomeController');
+//Members:团队成员
+Route::resource('members', 'MembersController');
 //News:资讯
 Route::resource('news', 'NewsController');

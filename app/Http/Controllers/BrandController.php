@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Constants\Dictionary;
 use App\Repositories\ApplyRepository;
+use Illuminate\Http\Request;
 
 class BrandController extends Controller
 {
@@ -20,7 +21,7 @@ class BrandController extends Controller
     public function wukong()
     {
         $detail = [];
-        $brand = 'wukong';
+        $brand = Dictionary::$brands['wukong'];
         
         return view($this->route . '.' . $brand, [
             'route'     => $this->route,
@@ -35,7 +36,7 @@ class BrandController extends Controller
     public function pocketcat()
     {
         $detail = [];
-        $brand = 'pocketcat';
+        $brand = Dictionary::$brands['pocketcat'];
         
         return view($this->route . '.' . $brand, [
             'route'     => $this->route,
@@ -50,7 +51,7 @@ class BrandController extends Controller
     public function town()
     {
         $detail = [];
-        $brand = 'town';
+        $brand = Dictionary::$brands['town'];
         
         return view($this->route . '.' . $brand, [
             'route'     => $this->route,
@@ -66,5 +67,10 @@ class BrandController extends Controller
     {
         $repository = new ApplyRepository();
         $repository->store();
+    }
+    
+    public function members(Request $request)
+    {
+        
     }
 }
