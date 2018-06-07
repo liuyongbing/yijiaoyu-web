@@ -9,7 +9,7 @@
 @section('content')
 <article class="main newsDetail">
     
-    @include('include.banner')
+    {!! \App\Helpers\WidgetHelper::banner('about') !!}
     
     <section class="detail_content">
         <div class="infoShow">

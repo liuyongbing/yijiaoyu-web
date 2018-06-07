@@ -9,7 +9,7 @@
 @section('content')
 <article class="main">
     
-    {!! \App\Helpers\WidgetHelper::banner('pcketcat') !!}
+    {!! \App\Helpers\WidgetHelper::banner('pocketcat') !!}
     
     <!-- -->
     <section class="brand_center kdm_center" id="brands_tab">
