@@ -9,7 +9,7 @@
 @section('content')
 <article class="main">
     
-    @include('include.banner')
+    {!! \App\Helpers\WidgetHelper::banner('about') !!}
     
     <section class="searchBox">
         <div class="yearSelect">

@@ -8,8 +8,8 @@
 
 @section('content')
 <article class="main about_main">
-    
-    @include('include.banner')
+
+    {!! \App\Helpers\WidgetHelper::banner('about') !!}
     
     <!-- bannerBottom -->
     <section class="ab_BannerBottom" id="group_introduction">
