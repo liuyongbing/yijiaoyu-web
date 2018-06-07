@@ -310,6 +310,13 @@
     max-width: 1357px;
     margin: 0 auto;
 }
+.joinUs_brand{
+     text-align: center;
+ }
+.joinUs_brand img{
+    width: 100%;
+    max-width: 1030px;
+}
 .joinUs_brand .top{
     font-size: 18px;
     height: 40px;
