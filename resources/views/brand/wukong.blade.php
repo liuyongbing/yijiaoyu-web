@@ -238,83 +238,14 @@
                 </li>
             </ul>
         </div>
-        <div class="p2">
-            <h3 class="title">教练团队</h3>
-            <ul class="userBox">
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/01.jpg{{ $STATIC_VERSION }}" alt="杨帆"/>
-                        <div class="mark">
-                            <h3 class="title">杨帆</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/02.jpg{{ $STATIC_VERSION }}" alt="詹超鹏"/>
-                        <div class="mark">
-                            <h3 class="title">詹超鹏</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/03.jpg{{ $STATIC_VERSION }}" alt="赵春桥"/>
-                        <div class="mark">
-                            <h3 class="title">赵春桥</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/04.jpg{{ $STATIC_VERSION }}" alt="肖宇"/>
-                        <div class="mark">
-                            <h3 class="title">肖宇</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/05.jpg{{ $STATIC_VERSION }}" alt="刘南山"/>
-                        <div class="mark">
-                            <h3 class="title">刘南山</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/06.jpg{{ $STATIC_VERSION }}" alt="陈孟龙"/>
-                        <div class="mark">
-                            <h3 class="title">陈孟龙</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/07.jpg{{ $STATIC_VERSION }}" alt="唐宇"/>
-                        <div class="mark">
-                            <h3 class="title">唐宇</h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/qtds/person02/08.jpg{{ $STATIC_VERSION }}" alt="胡兴泰"/>
-                        <div class="mark">
-                            <h3 class="title">胡兴泰</h3>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        
+        <!--教练团队-->
+        {!! App\Helpers\WidgetHelper::members($brand, 'teacher') !!}
+        
         <div class="p3">
             <h3 class="title">客服团队</h3>
             <img src="/imgs/qtds/kefu.jpg{{ $STATIC_VERSION }}" alt="客服"/>
         </div>
     </section>
-</article>>
-@endsection
-
-@section('script')
-<script src="{{ asset(elixir('js/brands.js')) }}{{ $STATIC_VERSION }}"></script>
+</article>
 @endsection
