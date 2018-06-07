@@ -72,23 +72,23 @@
             </span>
         </h3>
         <div class="brandImgs">
-            <a href="javascript:;">
-            <img src="imgs/about/taiquandao.png{{ $STATIC_VERSION }}" alt="跆拳道"/>
+            <a href="{{ route('brand.wukong') }}">
+                <img src="imgs/about/taiquandao.png{{ $STATIC_VERSION }}" alt="跆拳道"/>
+            </a>
+            <a href="{{ route('brand.pocketcat') }}">
+                <img src="imgs/about/dance.png{{ $STATIC_VERSION }}" alt="舞蹈"/>
+            </a>
+            <a href="{{ route('brand.town') }}">
+                <img src="imgs/about/meishu.png{{ $STATIC_VERSION }}" alt="美术"/>
             </a>
             <a href="javascript:;">
-            <img src="imgs/about/dance.png{{ $STATIC_VERSION }}" alt="舞蹈"/>
+                <img src="imgs/about/lunhua.png{{ $STATIC_VERSION }}" alt="轮滑"/>
             </a>
             <a href="javascript:;">
-            <img src="imgs/about/meishu.png{{ $STATIC_VERSION }}" alt="美术"/>
+                <img src="imgs/about/basketball.png{{ $STATIC_VERSION }}" alt="篮球"/>
             </a>
             <a href="javascript:;">
-            <img src="imgs/about/lunhua.png{{ $STATIC_VERSION }}" alt="轮滑"/>
-            </a>
-            <a href="javascript:;">
-            <img src="imgs/about/basketball.png{{ $STATIC_VERSION }}" alt="篮球"/>
-            </a>
-            <a href="javascript:;">
-            <img src="imgs/about/footerball.png{{ $STATIC_VERSION }}" alt="足球"/>
+                <img src="imgs/about/footerball.png{{ $STATIC_VERSION }}" alt="足球"/>
             </a>
         </div>
     </section>
