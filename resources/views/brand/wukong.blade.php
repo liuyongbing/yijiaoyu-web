@@ -238,10 +238,10 @@
                 </li>
             </ul>
         </div>
-        <div class="p2">
-            <h3 class="title">教练团队</h3>
-            {!! App\Helpers\WidgetHelper::members($brand, 'teacher') !!}
-        </div>
+        
+        <!--教练团队-->
+        {!! App\Helpers\WidgetHelper::members($brand, 'teacher') !!}
+        
         <div class="p3">
             <h3 class="title">客服团队</h3>
             <img src="/imgs/qtds/kefu.jpg{{ $STATIC_VERSION }}" alt="客服"/>

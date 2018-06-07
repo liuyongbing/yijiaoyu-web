@@ -265,6 +265,13 @@
     transition: all 0.3s;
    opacity: 0;
 }
+.user_brand .userBox .item .loadmore {
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+    display: block;
+    margin-top: 130px;
+}
 .user_brand .userBox .item:hover .mark,.user_brand .userBox .item:focus .mark{
    opacity: 1;
 }

@@ -1,3 +1,6 @@
+    @if (!empty($members))
+        <div class="p2">
+            <h3 class="title">教练团队</h3>
             <ul class="userBox">
             @foreach($members as $item)
                 <li class="item">
@@ -9,11 +12,12 @@
             @endforeach
             @if ($loadMore)
                 <li class="item">
-                    <a href="javascript:;" class="loadmore">更多>></a>
+                    <a href="javascript:;" class="loadmore">更多》</a>
                 </li>
             @endif
             </ul>
-            
+        </div>
+    @endif
 
 @section('script')
 <script src="{{ asset(elixir('js/brands.js')) }}{{ $STATIC_VERSION }}"></script>
