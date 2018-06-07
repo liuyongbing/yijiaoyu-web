@@ -46,7 +46,7 @@ class NewsController extends Controller
         $results = $this->repository->list($params, $page, $size, $orderBy);
         
         $repository = new CategoriesRepository();
-        $categories = $repository->all();
+        $categories = $repository->all(['status' => 1]);
         
         $years = $this->repository->years();
         
