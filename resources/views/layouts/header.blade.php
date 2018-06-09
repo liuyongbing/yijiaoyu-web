@@ -11,12 +11,11 @@
             <a href="{{ route('about.index') }}">关于我们<br/>
                 ABOUT US
             </a>
-            <ul class="itemUl">
+            <!--ul class="itemUl">
                 <li class="item"><a href="{{ route('about.index') }}#group_introduction">集团简介</a></li>
                 <li class="item"><a href="{{ route('about.index') }}#brand_culture">企业价值观</a></li>
                 <li class="item"><a href="{{ route('about.index') }}#brand_list">品牌展示</a></li>
-            </ul>
-
+            </ul-->
         </li>
         <li class="item ">
             <a href="{{ route('brand.wukong') }}">
