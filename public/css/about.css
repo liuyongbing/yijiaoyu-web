@@ -46,8 +46,8 @@
     margin-right: 0;
 }
 .ab_group ,.ab_brandShow{
-    padding-top: 95px;
-    padding-bottom: 83px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background: #f4f3f3;
 }
 .ab_brand .brandImgs{
@@ -60,7 +60,7 @@
    display: inline-block;
    width: 165px;
    margin-left: 38px;
-   margin-top: 30px;
+   margin-top: 0px;
    cursor: pointer;
 }
 .ab_brandShow .brandImgs>a:first-of-type{
