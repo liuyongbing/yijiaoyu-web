@@ -14,7 +14,7 @@
     <section class="detail_content">
         <div class="infoShow">
           <span class="info">{{ $detail['category_name'] }}</span>
-          <span class="date">{{ date('Y年n月j日', strtotime($detail['created_at'])) }}</span>
+          <span class="date">{{ date('Y年n月j日', strtotime($detail['published_at'])) }}</span>
         </div>
         <div class="newsCenter">
             <ul class="newsUl">
