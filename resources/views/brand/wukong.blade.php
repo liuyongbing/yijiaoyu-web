@@ -47,6 +47,16 @@
             </a>
         </div>
         <div class="p3">
+            <video id="my-video" class="video-js" controls preload="auto" width="740" height="400"
+		  poster="/util/videojs/m.png" data-setup="{}">
+                <source src="/util/videojs/video.mp4" type="video/mp4">
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a web browser that
+                  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+            </video>
+
+        
             <h2 class="title">叫我第一名</h2>
             <div class="info">
                 在中国教育行业，有这样一个跆拳道品牌<br/>
@@ -239,4 +249,20 @@
         </div>
     </section>
 </article>
+@endsection
+
+@section('style')
+    <link href="{{ asset(elixir('util/videojs/video-js.css')) }}{{ $STATIC_VERSION }}" rel="stylesheet" />
+@endsection
+
+@section('script')
+<script src="{{ asset(elixir('util/videojs/video.min.js')) }}{{ $STATIC_VERSION }}"></script>
+<script type="text/javascript">
+var myPlayer = videojs('my-video');
+videojs("my-video").ready(function(){
+    var myPlayer = this;
+    myPlayer.play();
+});
+</script>
+
 @endsection
