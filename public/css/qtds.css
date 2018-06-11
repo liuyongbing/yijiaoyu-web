@@ -54,6 +54,7 @@
     padding-top: 100px;
     text-align: center;
 }
+
  .com_brand img{
     width: auto;
 }
@@ -292,6 +293,10 @@
 .fabletown_main  img{
     width: 50%;
     max-width: 949px;
+}
+.fabletown_main .bannerUl img{
+    width: 100%;
+    max-width: 100%;
 }
 .fabletown_main .joinUs_brand .p2{
     width: 100%;
