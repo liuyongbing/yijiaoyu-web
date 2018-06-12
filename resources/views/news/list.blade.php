@@ -50,7 +50,7 @@
                         <div class="newsinfo">
                             <h3 class="title">{{ $item['title'] }}</h3>
                             <p class="info">{{ $item['summary'] }}</p>
-                            <span class="date">{{ date('Y年n月j日', strtotime($item['created_at'])) }}</span>
+                            <span class="date">{{ date('Y年n月j日', strtotime($item['published_at'])) }}</span>
                         </div>
                     </a>
                 </li>
