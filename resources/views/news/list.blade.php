@@ -71,6 +71,7 @@
 @endsection
 
 @section('script')
+<script src="{{ asset(elixir('js/news.js')) }}{{ $STATIC_VERSION }}"></script>
 <script type="text/javascript">
 $(function() {
     var route = "{{ route('news.index') }}";

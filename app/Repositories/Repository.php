@@ -79,6 +79,11 @@ class Repository
      */
     public function all($params = [], $orderBy = '')
     {
+        if (!empty($orderBy))
+        {
+            $params['order'] = $orderBy;
+        }
+        
         return $this->endPoint->all($params);
     }
 }

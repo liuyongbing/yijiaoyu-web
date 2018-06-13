@@ -92,7 +92,7 @@ class Endpoints
     }
     
     /**
-     * 列表 - 所表
+     * 列表 - 所有
      *
      * @param array $params
      * @return array

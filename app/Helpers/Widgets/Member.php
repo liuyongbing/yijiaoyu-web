@@ -1,8 +1,8 @@
 <?php
 namespace App\Helpers\Widgets;
 
-use App\Repositories\MembersRepository;
 use App\Constants\Dictionary;
+use App\Repositories\MembersRepository;
 
 trait Member
 {

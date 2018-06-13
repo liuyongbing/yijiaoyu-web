@@ -3,7 +3,7 @@
 @section('title', trans('brand.' . $brand))
 
 @section('style')
-<link rel="stylesheet" href="{{ asset(elixir('css/qtds.css')) }}{{ $STATIC_VERSION }}" />
+<link href="{{ asset(elixir('css/qtds.css')) }}{{ $STATIC_VERSION }}" rel="stylesheet" />
 @endsection
 
 @section('content')
@@ -132,106 +132,13 @@
     <section class="user_brand main_brand">
         <div class="p1">
             <h3 class="title">管理团队</h3>
-            <ul class="userBox">
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/qtds/person01/01.jpg{{ $STATIC_VERSION }}" alt="杨帆"/>
-                        <div class="mark">
-                            <h3 class="title">杨帆</h3>
-                            <p class="info">总执行助理︱齐天大圣总经办</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/qtds/person01/02.jpg{{ $STATIC_VERSION }}" alt="詹超鹏"/>
-                        <div class="mark">
-                            <h3 class="title">詹超鹏</h3>
-                            <p class="info">经理︱齐天大圣总经办</p>
-                        </div>
-                    </a>
-                </li>   <li class="item">
-                <a href="javascript:;">
-                    <img src="/imgs/qtds/person01/03.jpg{{ $STATIC_VERSION }}" alt="赵春桥"/>
-                    <div class="mark">
-                        <h3 class="title">赵春桥</h3>
-                        <p class="info">总教练︱齐天大圣总经办</p>
-                    </div>
-                </a>
-            </li>   <li class="item">
-                <a href="javascript:;">
-                    <img src="/imgs/qtds/person01/04.jpg{{ $STATIC_VERSION }}" alt="熊梅娥"/>
-                    <div class="mark">
-                        <h3 class="title">熊梅娥</h3>
-                        <p class="info">客服总监︱齐天大圣总经办</p>
-                    </div>
-                </a>
-            </li>   <li class="item">
-                <a href="javascript:;">
-                    <img src="/imgs/qtds/person01/05.jpg{{ $STATIC_VERSION }}" alt="陶慰"/>
-                    <div class="mark">
-                        <h3 class="title">陶慰</h3>
-                        <p class="info">教研员︱齐天大圣总经办</p>
-                    </div>
-                </a>
-            </li>   <li class="item">
-                <a href="javascript:;">
-                    <img src="/imgs/qtds/person01/06.jpg{{ $STATIC_VERSION }}" alt="丁力"/>
-                    <div class="mark">
-                        <h3 class="title">丁力</h3>
-                        <p class="info">区域馆长</p>
-                    </div>
-                </a>
-            </li>   <li class="item">
-                <a href="javascript:;">
-                    <img src="/imgs/qtds/person01/07.jpg{{ $STATIC_VERSION }}" alt="贾诗涵"/>
-                    <div class="mark">
-                        <h3 class="title">贾诗涵</h3>
-                        <p class="info">区域馆长</p>
-                    </div>
-                </a>
-            </li>
-                <li class="item">
-                <a href="javascript:;">
-                    <img src="/imgs/qtds/person01/08.jpg{{ $STATIC_VERSION }}" alt="肖烈斯"/>
-                    <div class="mark">
-                        <h3 class="title">肖烈斯</h3>
-                        <p class="info">区域馆长</p>
-                    </div>
-                </a>
-            </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/qtds/person01/09.jpg{{ $STATIC_VERSION }}" alt="骆心"/>
-                        <div class="mark">
-                            <h3 class="title">骆心</h3>
-                            <p class="info">区域馆长</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/qtds/person01/10.jpg{{ $STATIC_VERSION }}" alt="万江山"/>
-                        <div class="mark">
-                            <h3 class="title">万江山</h3>
-                            <p class="info">区域馆长</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/qtds/person01/11.jpg{{ $STATIC_VERSION }}" alt="姚志冲"/>
-                        <div class="mark">
-                            <h3 class="title">姚志聪</h3>
-                            <p class="info">区域馆长</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            {!! App\Widgets\Member::all($brand, 'manager') !!}
         </div>
         
-        <!--教练团队-->
-        {!! App\Helpers\WidgetHelper::members($brand, 'teacher') !!}
+        <div class="p2">
+            <h3 class="title">教练团队</h3>
+            {!! App\Widgets\Member::list($brand, 'teacher') !!}
+        </div>
         
         <div class="p3">
             <h3 class="title">客服团队</h3>
@@ -239,4 +146,51 @@
         </div>
     </section>
 </article>
+@endsection
+
+@section('script')
+<script src="{{ asset(elixir('js/brands.js')) }}{{ $STATIC_VERSION }}"></script>
+<script type="text/javascript">
+$(function() {
+    var page = 2;
+    $('.loadmore').click(function() {
+        $.ajax({
+            method: "GET",
+            url: "{{ route('members.index') }}",
+            data: { 
+                'brand_id' : $(this).attr('data-brand'),
+                'team_type' : $(this).attr('data-team'),
+                'page' : page,
+                'page_size': $(this).attr('data-size')
+            },
+            dataType: 'json',
+            success: function(response) {
+                var dataStr = '';
+                if (response.items)
+                {
+                    $(response.items).each(function(i, item) {
+                        dataStr += '<li class="item">';
+                        dataStr += '    <img src="' + item.image_url + '" alt="' + item.username + '" />';
+                        dataStr += '    <div class="mark">';
+                        dataStr += '        <h3 class="title">' + item.username + '</h3>';
+                        dataStr += '    </div>';
+                        dataStr += '</li>';
+                    })
+                    page += 1;
+                    
+                    $(".loadmore").parent().before(dataStr);
+                }
+                if (false == response.loadmore)
+                {
+                    $('.loadmore').parent().hide();
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown)
+            {
+                alert('服务器错误');
+            }
+        })
+    }) 
+});
+</script>
 @endsection

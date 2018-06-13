@@ -40,3 +40,7 @@
     </section>
 </article>
 @endsection
+
+@section('script')
+<script src="{{ asset(elixir('js/news.js')) }}{{ $STATIC_VERSION }}"></script>
+@endsection

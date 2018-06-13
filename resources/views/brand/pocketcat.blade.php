@@ -97,113 +97,16 @@
         </div>
     </section>
     <section class="user_brand main_brand kdm_user_brand">
+        
         <div class="p1">
             <h3 class="title">管理团队</h3>
-            <ul class="userBox kdm_user">
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/kdm/person01/01.jpg{{ $STATIC_VERSION }}" alt="谭简冬"/>
-                        <div class="mark">
-                            <h3 class="title">谭简冬</h3>
-                            <p class="info">集团总经理︱集团部门经理︱口袋猫总经办</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/kdm/person01/02.jpg{{ $STATIC_VERSION }}" alt="杨可儿"/>
-                        <div class="mark">
-                            <h3 class="title">杨可儿</h3>
-                            <p class="info">口袋猫总经办</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/kdm/person01/03.jpg{{ $STATIC_VERSION }}" alt="邓萍飞"/>
-                        <div class="mark">
-                            <h3 class="title">邓萍飞</h3>
-                            <p class="info">中国舞技术总监</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/kdm/person01/04.jpg{{ $STATIC_VERSION }}" alt="刘蓉"/>
-                        <div class="mark">
-                            <h3 class="title">刘蓉</h3>
-                            <p class="info">拉丁舞技术总监</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/kdm/person01/05.jpg{{ $STATIC_VERSION }}" alt="李晓雨"/>
-                        <div class="mark">
-                            <h3 class="title">李晓雨</h3>
-                            <p class="info">客服总监</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/kdm/person01/06.jpg{{ $STATIC_VERSION }}" alt="汤立伟"/>
-                        <div class="mark">
-                            <h3 class="title">汤立伟</h3>
-                            <p class="info">区域馆长</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/kdm/person01/07.jpg{{ $STATIC_VERSION }}" alt="陶孟娟"/>
-                        <div class="mark">
-                            <h3 class="title">陶孟娟</h3>
-                            <p class="info">区域馆长</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/kdm/person01/08.jpg{{ $STATIC_VERSION }}" alt="付清雯"/>
-                        <div class="mark">
-                            <h3 class="title">付清雯</h3>
-                            <p class="info">区域馆长</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/kdm/person01/09.jpg{{ $STATIC_VERSION }}" alt="陈浩然"/>
-                        <div class="mark">
-                            <h3 class="title">陈浩然</h3>
-                            <p class="info">区域馆长</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/kdm/person01/10.jpg{{ $STATIC_VERSION }}" alt="徐露"/>
-                        <div class="mark">
-                            <h3 class="title">徐露</h3>
-                            <p class="info">CBD金缔华城旗舰馆馆长</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="javascript:;">
-                        <img src="/imgs/kdm/person01/11.jpg{{ $STATIC_VERSION }}" alt="吴家月"/>
-                        <div class="mark">
-                            <h3 class="title">吴家月</h3>
-                            <p class="info">当阳概念馆馆长</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            {!! App\Widgets\Member::all($brand, 'manager') !!}
         </div>
         
-        <!--教练团队-->
-        {!! App\Helpers\WidgetHelper::members($brand, 'teacher') !!}
+        <div class="p2">
+            <h3 class="title">教练团队</h3>
+            {!! App\Widgets\Member::list($brand, 'teacher') !!}
+        </div>
         
         <div class="p3">
             <h3 class="title">客服团队</h3>
