@@ -99,8 +99,7 @@ class Endpoints
      */
     public function all($params)
     {
-        //TODO: 实现
-        $response = ApiClient::get($this->api, $params);
+        $response = ApiClient::get($this->api . '/all', $params);
         
         return $this->response($response);
     }
