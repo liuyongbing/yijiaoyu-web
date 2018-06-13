@@ -34,7 +34,7 @@ class Member
         }
         
         $repository = new MembersRepository();
-        $results = $repository->list($params, 1, Dictionary::PAGE_SIZE_7, 'sort');
+        $results = $repository->list($params, 0, Dictionary::PAGE_SIZE_7, 'sort');
         
         $total = isset($results['total']) ? $results['total'] : 0;
         $loadMore = Dictionary::PAGE_SIZE_7 < $total ? true: false;
@@ -43,7 +43,7 @@ class Member
             'members' => isset($results['list']) ? $results['list'] : [],
             'brandId' => $brandId,
             'teamType' => $teamType,
-            'pageSize' => Dictionary::PAGE_SIZE_7 + 1,
+            'pageSize' => Dictionary::PAGE_SIZE_8,
             'loadMore' => $loadMore
         ]);
     }

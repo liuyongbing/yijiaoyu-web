@@ -11,7 +11,8 @@ class Dictionary
     use TeamTypes;
     
     const PAGE_SIZE = 10;//页容量
-    const PAGE_SIZE_7 = 7;//页容量
+    const PAGE_SIZE_7 = 7;
+    const PAGE_SIZE_8 = 8;
     
     const ACCOUNT_TYPE = [
         //'ADMINISTRATOR' => 1,//超给级管理员

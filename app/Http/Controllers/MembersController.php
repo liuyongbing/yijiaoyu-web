@@ -25,7 +25,8 @@ class MembersController extends Controller
         $brandId = $request->input('brand_id', '');
         $teamType = $request->input('team_type', '');
         $page = $request->input('page', 1);
-        $size = $request->input('page_size', Dictionary::PAGE_SIZE_7);
+        $size = $request->input('page_size', Dictionary::PAGE_SIZE_8);
+        $offset = (($page-1) * $size) - 1;
         
         $params = ['status' => 1];
         if (!empty($brandId))
@@ -37,10 +38,7 @@ class MembersController extends Controller
             $params['team_type'] = $teamType;
         }
         
-        $orderBy = [
-            'sort' => 'asc',
-        ];
-        $results = $this->repository->list($params, $page, $size, $orderBy);
+        $results = $this->repository->list($params, $offset, $size, 'sort');
         
         $total = isset($results['total']) ? $results['total'] : 0;
         $loadMore = ($size * $page) < $total ? true: false;
