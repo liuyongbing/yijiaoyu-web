@@ -119,4 +119,47 @@
 
 @section('script')
 <script src="{{ asset(elixir('js/brands.js')) }}{{ $STATIC_VERSION }}"></script>
+<script type="text/javascript">
+$(function() {
+    var page = 2;
+    $('.loadmore').click(function() {
+        $.ajax({
+            method: "GET",
+            url: "{{ route('members.index') }}",
+            data: { 
+                'brand_id' : $(this).attr('data-brand'),
+                'team_type' : $(this).attr('data-team'),
+                'page' : page,
+                'page_size': $(this).attr('data-size')
+            },
+            dataType: 'json',
+            success: function(response) {
+                var dataStr = '';
+                if (response.items)
+                {
+                    $(response.items).each(function(i, item) {
+                        dataStr += '<li class="item">';
+                        dataStr += '    <img src="' + item.image_url + '" alt="' + item.username + '" />';
+                        dataStr += '    <div class="mark">';
+                        dataStr += '        <h3 class="title">' + item.username + '</h3>';
+                        dataStr += '    </div>';
+                        dataStr += '</li>';
+                    })
+                    page += 1;
+                    
+                    $(".loadmore").parent().before(dataStr);
+                }
+                if (false == response.loadmore)
+                {
+                    $('.loadmore').parent().hide();
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown)
+            {
+                alert('服务器错误');
+            }
+        })
+    }) 
+});
+</script>
 @endsection
