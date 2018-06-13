@@ -9,7 +9,7 @@
 @section('content')
 <article class="main about_main">
 
-    {!! \App\Helpers\WidgetHelper::banner('about') !!}
+    {!! \App\Widgets\Banner::list('about') !!}
     
     <!-- bannerBottom -->
     <section class="ab_BannerBottom" id="group_introduction">

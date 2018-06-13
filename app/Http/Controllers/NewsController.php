@@ -41,7 +41,7 @@ class NewsController extends Controller
         $params['status'] = 1;
         
         $orderBy = [
-            'id' => 'desc',
+            'published_at' => 'desc'
         ];
         
         $results = $this->repository->list($params, $offset, $size, $orderBy);

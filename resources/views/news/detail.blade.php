@@ -9,7 +9,7 @@
 @section('content')
 <article class="main newsDetail">
     
-    {!! \App\Helpers\WidgetHelper::banner('about') !!}
+    {!! \App\Widgets\Banner::list('about') !!}
     
     <section class="detail_content">
         <div class="infoShow">

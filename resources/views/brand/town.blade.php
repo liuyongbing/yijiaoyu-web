@@ -9,7 +9,7 @@
 @section('content')
 <article class="main fabletown_main">
     
-    {!! \App\Helpers\WidgetHelper::banner('town') !!}
+    {!! \App\Widgets\Banner::list('town') !!}
     
     <!-- -->
     <section class="brand_center thz_center" id="brands_tab">

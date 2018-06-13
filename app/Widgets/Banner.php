@@ -1,11 +1,18 @@
 <?php
-namespace App\Helpers\Widgets;
+namespace App\Widgets;
 
 use App\Repositories\BannerRepository;
 
-trait Banner
+class Banner
 {
-    public static function banner($position)
+    /**
+     * 人物品牌 - 列表
+     * 
+     * @param string $brand
+     * @param string $teamType
+     * @return \Illuminate\View\View|\Illuminate\Contracts\View\Factory
+     */
+    public static function list($position)
     {
         switch ($position)
         {
@@ -34,9 +41,9 @@ trait Banner
         ];
         
         $repository = new BannerRepository();
-        $results = $repository->list($params);
+        $results = $repository->all($params);
         
-        return view('include.banner', [
+        return view('widgets.banner', [
             'banners' => isset($results['list']) ? $results['list'] : [],
         ]);
     }

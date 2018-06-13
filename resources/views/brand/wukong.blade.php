@@ -9,7 +9,7 @@
 @section('content')
 <article class="main">
     
-    {!! \App\Helpers\WidgetHelper::banner('wukong') !!}
+    {!! \App\Widgets\Banner::list('wukong') !!}
     
     <!-- -->
     <section class="brand_center" id="brands_tab">

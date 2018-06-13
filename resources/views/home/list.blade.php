@@ -5,7 +5,7 @@
 @section('content')
 <article class="main">
     
-    {!! \App\Helpers\WidgetHelper::banner('home') !!}
+    {!! \App\Widgets\Banner::list('home') !!}
     
 </article>
 @endsection
