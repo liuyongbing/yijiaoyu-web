@@ -27,6 +27,7 @@ class NewsController extends Controller
         $categoryId = $request->input('category_id', 0);
         $page = $request->input('page', 1);
         $size = Dictionary::PAGE_SIZE;
+        $offset = ($page - 1) * $size;
         
         $params = [];
         if (!empty($year))
@@ -43,7 +44,7 @@ class NewsController extends Controller
             'id' => 'desc',
         ];
         
-        $results = $this->repository->list($params, $page, $size, $orderBy);
+        $results = $this->repository->list($params, $offset, $size, $orderBy);
         
         $repository = new CategoriesRepository();
         $categories = $repository->all(['status' => 1]);
