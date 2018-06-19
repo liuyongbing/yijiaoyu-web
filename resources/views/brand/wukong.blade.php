@@ -4,7 +4,6 @@
 
 @section('style')
 <link href="{{ asset(elixir('css/qtds.css')) }}{{ $STATIC_VERSION }}" rel="stylesheet" />
-    <link href="{{ asset(elixir('util/videojs/video-js.css')) }}{{ $STATIC_VERSION }}" rel="stylesheet" />
 @endsection
 
 @section('content')
@@ -12,7 +11,6 @@
     
     {!! \App\Widgets\Banner::list('wukong') !!}
     
-    <!-- -->
     <section class="brand_center" id="brands_tab">
         <div class="title_tab">
             <a href="javascript:;" class="tab active">企业品牌</a>
@@ -50,7 +48,7 @@
         <div class="p3">        
             <h2 class="title">叫我第一名</h2>
             <div class="info">
-                <video id="my-video" class="video-js" controls preload="auto" width="740" height="400" poster="" data-setup="{}">
+                <video id="my-video" class="video-js" controls preload="auto" width="800" height="500" poster="" data-setup="{}">
                     <source src="/imgs/video/brand.mp4" type="video/mp4">
                 </video>
             </div>
@@ -112,15 +110,8 @@
 @endsection
 
 @section('script')
-<script src="{{ asset(elixir('util/videojs/video.min.js')) }}{{ $STATIC_VERSION }}"></script>
 <script src="{{ asset(elixir('js/brands.js')) }}{{ $STATIC_VERSION }}"></script>
 <script type="text/javascript">
-var myPlayer = videojs('my-video');
-videojs("my-video").ready(function(){
-    //var myPlayer = this;
-    //myPlayer.play();
-});
-
 $(function() {
     var page = 2;
     $('.loadmore').click(function() {
