@@ -4,6 +4,7 @@
 
 @section('style')
 <link href="{{ asset(elixir('css/qtds.css')) }}{{ $STATIC_VERSION }}" rel="stylesheet" />
+    <link href="{{ asset(elixir('util/videojs/video-js.css')) }}{{ $STATIC_VERSION }}" rel="stylesheet" />
 @endsection
 
 @section('content')
@@ -46,51 +47,13 @@
                 <img src="/imgs/qtds/two03.png{{ $STATIC_VERSION }}" alt=""/>
             </a>
         </div>
-        <div class="p3">
+        <div class="p3">        
             <h2 class="title">叫我第一名</h2>
             <div class="info">
-                在中国教育行业，有这样一个跆拳道品牌<br/>
-                它有一个响亮的名字——齐天大圣<br/>
-                很多人好奇它的来历<br/>
-                今天，他们的创始团队给出了有趣的解释<br/>
-            <p></p>
-                每个孩子都是天真无邪，活泼可爱<br/>
-                调皮、贪玩、撒泼、不羁<br/>
-                就像大闹天宫的孙猴子<br/>
-                直到遇见给大圣戴上紧箍咒的恩师<br/>
-                孩子的人生，终归萌生梦想<br/>
-                礼义廉耻、忍耐克己、百折不屈<br/>
-                跆拳道精神，和梦想伴随一生<br/>
-            <p></p>
-                他们说：哪有什么天生丽质<br/>
-                天天坚持，成绩和颜值同样漂亮<br/>
-                自2011年起<br/>
-                通过多年的积累经验、沉淀师资、创新教学、探索品牌<br/>
-                齐天大圣终于走上了异军突起的道路<br/>
-            <p></p>
-                他们说：哪有什么自带光环<br/>
-                梦想如火，遇则燎原<br/>
-                从1名学员，一家道馆裂变到30家道馆<br/>
-                220名师资队伍，培训学员人数达30000余名<br/>
-                从西陵区、伍家区、夷陵区到宜昌周边县市<br/>
-                再到潜江、恩施、安徽、山东<br/>
-                齐天大圣的足迹逐渐遍布湖北，走向全国<br/>
-            <p></p>
-                坚守初心<br/>
-                打造陪伴孩子成长的素质教育平台<br/>
-                齐天大圣一直在行动<br/>
-            <p></p>
-                作为湖北省跆拳道协会优秀道馆<br/>
-                三峡大学体育学院后备人才储备基地<br/>
-                湖北民族学院体育学院创新创业基地<br/>
-                韩国嘉泉大学跆拳道特长生保送点<br/>
-            <p></p>
-                齐天大圣向所有孩子诚挚呼吁<br/>
-                有梦尽管去拼！<br/>
-                在学有所成时，跆拳伴你快乐<br/>
-                待功成名就时，荣耀有你有我<br/>
-                齐天大圣定将与你一起领武幸福！<br/>
-        </div>
+                <video id="my-video" class="video-js" controls preload="auto" width="740" height="400" poster="" data-setup="{}">
+                    <source src="/imgs/video/brand.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
         <div class="p4">
             <img src="/imgs/qtds/fzlc.png{{ $STATIC_VERSION }}" alt="发展历程"/>
@@ -149,8 +112,15 @@
 @endsection
 
 @section('script')
+<script src="{{ asset(elixir('util/videojs/video.min.js')) }}{{ $STATIC_VERSION }}"></script>
 <script src="{{ asset(elixir('js/brands.js')) }}{{ $STATIC_VERSION }}"></script>
 <script type="text/javascript">
+var myPlayer = videojs('my-video');
+videojs("my-video").ready(function(){
+    //var myPlayer = this;
+    //myPlayer.play();
+});
+
 $(function() {
     var page = 2;
     $('.loadmore').click(function() {
