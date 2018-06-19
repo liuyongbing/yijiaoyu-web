@@ -15,3 +15,5 @@ yarn-error.log
 .buildpath
 .project
 .settings/*
+
+public/imgs/video/*
