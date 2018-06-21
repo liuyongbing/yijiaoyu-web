@@ -72,12 +72,12 @@
     <section class="user_brand main_brand">
     
         <div class="p1">
-            <h3 class="title">管理团队</h3>
+            <h3 class="title">{{ trans('common.team_manager') }}</h3>
             {!! App\Widgets\Member::all($brand, 'manager') !!}
         </div>
         
         <div class="p2">
-            <h3 class="title">教练团队</h3>
+            <h3 class="title">{{ trans('common.team_teacher') }}</h3>
             {!! App\Widgets\Member::list($brand, 'teacher') !!}
         </div>
         

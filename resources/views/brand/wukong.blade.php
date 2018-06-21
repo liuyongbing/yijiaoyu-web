@@ -92,17 +92,17 @@
     </section>
     <section class="user_brand main_brand">
         <div class="p1">
-            <h3 class="title">管理团队</h3>
+            <h3 class="title">{{ trans('common.team_manager') }}</h3>
             {!! App\Widgets\Member::all($brand, 'manager') !!}
         </div>
         
         <div class="p2">
-            <h3 class="title">教练团队</h3>
+            <h3 class="title">{{ trans('common.team_teacher') }}</h3>
             {!! App\Widgets\Member::list($brand, 'teacher') !!}
         </div>
         
         <div class="p3">
-            <h3 class="title">客服团队</h3>
+            <h3 class="title">{{ trans('common.team_service') }}</h3>
             <img src="/imgs/qtds/kefu.jpg{{ $STATIC_VERSION }}" alt="客服"/>
         </div>
     </section>
