@@ -264,7 +264,7 @@
     background: rgba(255,255,255,0.9);
     padding: 10px 0;
     transition: all 0.3s;
-   opacity: 0;
+    opacity: 1;
 }
 .user_brand .userBox .item .loadmore {
     font-size: 20px;
