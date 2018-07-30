@@ -11,106 +11,97 @@
     
     {!! \App\Widgets\Banner::list('pocketcat') !!}
     
-    <!-- -->
     <section class="brand_center kdm_center" id="brands_tab">
         <div class="title_tab">
             <a href="javascript:;" class="tab active">企业品牌</a>
             <a href="javascript:;" class="tab">课程品牌</a>
-            <a href="javascript:;" class="tab">人物品牌</a>
-            <a href="javascript:;" class="joinUs">加入我们</a>
+            <a href="javascript:;" class="tab">加入我们</a>
         </div>
     </section>
+    
+    <!-- 企业品牌 -->
     <section class="com_brand main_brand kdm_brand" >
-        <div class="p1">
-            <img src="/imgs/kdm/logo.png{{ $STATIC_VERSION }}" alt="口袋猫" class="logo"/>
-            <p class="info">
-                我们是优雅的缔造者，<br/>
-                我们是生命的设计师，<br/>
-                我们更是口袋猫的一员。<br/>
-                我们怀揣着满腔的热血，<br/>
-                用创造与奉献打造企业新品牌，<br/>
-                以专业和服务主导舞蹈大市场，<br/>
-                让青春与活力散发光热，<br/>
-                用智慧和汗水创造价值。
-            </p>
+        <div class="p1 kdm_qy_p1">
+           <div class="left fl">
+               <img src="/imgs/kdm/m02qyleft.jpg{{ $STATIC_VERSION }}" alt="leftimg"/>
+           </div>
+           <div class="right fr">
+               <h3 class="title">「口袋猫」品牌简介</h3>
+               <p class="title_en">Brand introduction</p>
+               <p class="info">「口袋猫」是【翼教育】旗下舞蹈教育品牌，成立于2013年，专注于3-12岁舞蹈艺术教育。「口袋猫」秉承“通过舞蹈艺术，坚定自我，发现人生”的信念，运用5S教学理念、3D教学模式，独创的音乐曲目，专业的师资团队，点亮孩子“为热爱而活，为舞台而生”的艺术梦想。
+凭借先进的教学理念和现代化的教学模式，目前在宜昌拥有11家舞馆，30位舞蹈艺术专业教师，总营业面积超过2000平米。是宜昌地区最大的舞蹈艺术培训连锁机构，深受舞蹈同行和孩子家长的一致认可。</p>
+           </div>
         </div>
-        <div class="p2">
-            <a href="javascript:;">
-                <img src="/imgs/kdm/li01.jpg{{ $STATIC_VERSION }}" alt="01"/>
-            </a>
-            <a href="javascript:;">
-                <img src="/imgs/kdm/li02.jpg{{ $STATIC_VERSION }}" alt="240"/>
-            </a>
-            <a href="javascript:;">
-                <img src="/imgs/kdm/li03.jpg{{ $STATIC_VERSION }}" alt="1000"/>
-            </a>
+        <div class="p2 kdm_qy_p2">
+           <div class="img_box">
+            <img src="/imgs/kdm/m02qyp3.png{{ $STATIC_VERSION }}" alt="品牌优势"/>
         </div>
-        <div class="p3">
-            <h2 class="title">我们是优雅的缔造者，我们是生命的设计师</h2>
-            <div class="info">
-                <img src="/imgs/kdm/ban002.jpg{{ $STATIC_VERSION }}" alt="教学方式"/>
-        </div>
+         <img src="/imgs/kdm/m02qyp22.png{{ $STATIC_VERSION }}" alt="img" />
         </div>
         <div class="p4">
             <img src="/imgs/kdm/fzlc.png{{ $STATIC_VERSION }}" alt="发展历程"/>
         </div>
-        <div class="p5">
-            <h3 class="title">荣誉证书</h3>
-            <img src="/imgs/kdm/ry01.jpg{{ $STATIC_VERSION }}" alt="荣誉01"/>
-            <img src="/imgs/kdm/ry02.jpg{{ $STATIC_VERSION }}" alt="荣誉02"/>
-            <img src="/imgs/kdm/ry03.jpg{{ $STATIC_VERSION }}" alt="荣誉03"/>
+        <div class="p5" >
+            <h3 class="title">我们的荣誉<p class="title_en">our honor</p></h3>
+            <div class="ry_box swiper-container" id="ry"> 
+            <ul class="ry_ul swiper-wrapper">
+                <li class="item swiper-slide"><img src="/imgs/kdm/ry01.jpg{{ $STATIC_VERSION }}" alt="荣誉01"/></li>
+                <li class="item swiper-slide"><img src="/imgs/kdm/ry02.jpg{{ $STATIC_VERSION }}" alt="荣誉01"/></li>
+                <li class="item swiper-slide"><img src="/imgs/kdm/ry03.jpg{{ $STATIC_VERSION }}" alt="荣誉01"/></li>
+            </ul>
+            <a class="swiper-button-prev ry-prev icon"></a>
+            <a class="swiper-button-next ry-next icon"></a>
+        </div>
         </div>
     </section>
+    <!-- 企业品牌 End -->
+    
+    <!-- 课程品牌 -->
     <section class="self_brand main_brand kdm_self_brand">
-        <div class="p1">
-            <h3 class="title"><span class="icon"></span>立体教学 <p>以国际视野培养完整儿童</p></h3>
-            <a href="javascript:;">
-                <img src="/imgs/kdm/p101.png{{ $STATIC_VERSION }}" alt="p101"/>
-            </a>
-            <img src="/imgs/kdm/ztp101.jpg{{ $STATIC_VERSION }}" alt="zt"/>
+        <div class="p1 kdm_jx">
+            <h3 class="title">教学理念  <p class="title_bottom">5S教学理念:通过舞蹈艺术，坚定自我，发现人生</p></h3>
+            <ul class="ulBox">
+                <li class="item">
+                    <img src="/imgs/kdm/m02item05.png{{ $STATIC_VERSION }}" alt="感知"/>
+                    <p >培养音乐的节奏感，从大师的乐曲中感受舞蹈的基础情绪</p>
+                </li>
+                <li class="item">
+                    <img src="/imgs/kdm/m02item04.png{{ $STATIC_VERSION }}" alt="体验"/>
+                    <p >尝试用肢体的动作，在音乐的中体会各种丰盛的情绪共鸣</p>
+                </li>
+                <li class="item">
+                    <img src="/imgs/kdm/m02item03.png{{ $STATIC_VERSION }}" alt="理解"/>
+                    <p >通过对音乐的理解，利用肢体语言与乐曲进行对话，获得更多的认知</p>
+                </li>
+                <li class="item">
+                    <img src="/imgs/kdm/m02item02.png{{ $STATIC_VERSION }}" alt="想象"/>
+                    <p >认识本我，寻找真实的自我。通过艺术的演绎，表达内心独立的情感</p>
+                </li>
+                <li class="item">
+                    <img src="/imgs/kdm/m02item01.png{{ $STATIC_VERSION }}" alt="创造"/>
+                    <p >认识并突破艺术形式与流派，创造能量密度更高的自我表达方式</p>
+                </li>
+            </ul>
+            <img src="/imgs/kdm/ztp101.jpg{{ $STATIC_VERSION }}" alt="zt" />
         </div>
-        <div class="p1">
-            <h3 class="title"><span class="icon"></span>体适能舞蹈—能力篇 <p>25项综合核心能力</p></h3>
-            <a href="javascript:;">
-            <img src="/imgs/qtds/nl.jpg{{ $STATIC_VERSION }}" alt="nl"/>
-                <p class="info"><span class="age">3—12</span>岁为各项能力发展<span class="time">黄金时期</span></p>
-            </a>
+        <div class="p1 kdm_ms">
+            <h3 class="title">教学模式 <p>3D教学体系:课堂学习+家中复习+舞台演绎</p></h3>
+            <div class="content">
+                <ul class="left fl">
+                    <li class="item"><span class="tag">课堂学习</span>视频+独创+名师+课件+音乐+教学</li>
+                    <li class="item"><span class="tag">家中复习</span>私播+名师+重难+课堂+在线+点解</li>
+                    <li class="item"><span class="tag">舞台演绎</span>专业+全国+艺圈+考级+赛事+汇演</li>
+                </ul>
+                <div class="right fr">
+                     <img src="/imgs/kdm/m02right.jpg{{ $STATIC_VERSION }}" alt="rightimg"/>
+                </div>
+            </div>
         </div>
-        <div class="p2">
-            <h3 class="title"><span class="icon"></span>体适能舞蹈—品行篇</h3>
+        <div class="p2 kdm_jxxm">
             <a href="javascript:;">
-            <img src="/imgs/kdm/px01.png{{ $STATIC_VERSION }}" alt="class"/>
-            </a>
-        </div>
-        <div class="p2">
-            <h3 class="title"><span class="icon"></span>体适能舞蹈—技术篇</h3>
-            <a href="javascript:;">
-                <img src="/imgs/kdm/px02.jpg{{ $STATIC_VERSION }}" alt="class"/>
+                <img src="/imgs/kdm/m02p3.png{{ $STATIC_VERSION }}" alt="class"/>
             </a>
             <img src="/imgs/kdm/ztp02.jpg{{ $STATIC_VERSION }}" alt="zt"/>
-        </div>
-        <div class="p3">
-            <h3 class="title"><span class="icon"></span>体适能舞蹈—运动营养篇</h3>
-            <a href="javascript:;">
-            <img src="/imgs/kdm/ll.png{{ $STATIC_VERSION }}" alt="ll"/>
-            </a>
-        </div>
-    </section>
-    <section class="user_brand main_brand kdm_user_brand">
-        
-        <div class="p1">
-            <h3 class="title">{{ trans('common.team_manager') }}</h3>
-            {!! App\Widgets\Member::all($brand, 'manager') !!}
-        </div>
-        
-        <div class="p2">
-            <h3 class="title">{{ trans('common.team_teacher') }}</h3>
-            {!! App\Widgets\Member::list($brand, 'teacher') !!}
-        </div>
-        
-        <div class="p3">
-            <h3 class="title">{{ trans('common.team_service') }}</h3>
-            <img src="/imgs/kdm/kefu.jpg{{ $STATIC_VERSION }}" alt="客服"/>
         </div>
     </section>
 

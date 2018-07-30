@@ -10,10 +10,7 @@ $(function(){
             $(this).next('.selectList').slideDown(300);
             $(".selectList .item a").click(function(){
                 var text = $(this).text();
-                var value = $(this).attr('data-id');
-                var obj = $(this).parents(".selectList").prev('.inputBox').children('input[type="text"]');
-                obj.val(text);
-                obj.attr('data-id', value);
+                $(this).parents(".selectList").prev('.inputBox').children('input[type="text"]').val(text);
                 $(this).parents(".selectList").slideUp(300);
                 that.children(".icon").removeClass('icon-active');
                 that.next('.selectList').slideUp(300)
@@ -26,7 +23,6 @@ $(function(){
     });
     //判断数据数量
     if( $("#newslistBox li").length<1){
-        console.log($("#newslistBox li").length);
         $(".dataShow").hide();
         $(".noData").show();
     }else {
