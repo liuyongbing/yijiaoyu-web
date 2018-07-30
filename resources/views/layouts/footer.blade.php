@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="f_tel">
-        <h2><span>Tel</span>0717-6232880</h2>
+        <h2><span>Tel</span>400-808-6802</h2>
     </div>
     <div class="f_address">
         <img src="/imgs/icon/code.png{{ $STATIC_VERSION }}" alt="code" class="code"/>

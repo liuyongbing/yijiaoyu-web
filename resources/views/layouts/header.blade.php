@@ -45,5 +45,5 @@
             <a href="{{ env('EDU_URL') }}" target="_blank">教学入口</a>
         </li>
     </ul>
-    <span class="h_tel fr">0717-6232880</span>
+    <span class="h_tel fr">400-808-6802</span>
 </header>
